@@ -4,6 +4,6 @@
   <contextParameter xmi:id="_xy43wp7fEeeE5por0IoA7Q" comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" type="id_String" value="/user/hadoop/oodlle/"/>
   <contextParameter xmi:id="_xy43w57fEeeE5por0IoA7Q" comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" type="id_String" value="/user/hadoop/oodle/DailyFeeds/"/>
   <contextParameter xmi:id="_xy43xJ7fEeeE5por0IoA7Q" comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" type="id_String" value="/home/ec2-user/input_data.txt"/>
-  <contextParameter xmi:id="_xy43xZ7fEeeE5por0IoA7Q" comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" type="id_String" value="/home/hadoop/oodle/param/config_param.txt"/>
+  <contextParameter xmi:id="_xy43xZ7fEeeE5por0IoA7Q" comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" type="id_String" value="/home/ec2-user/config_param.txt"/>
   <contextParameter xmi:id="_xy43xp7fEeeE5por0IoA7Q" comment="" name="JsonSerDeJarPath" prompt="JsonSerDeJarPath?" promptNeeded="false" type="id_String" value="/home/hadoop/oodle/jar/json-serde-1.3.7-jar-with-dependencies.jar"/>
 </talendfile:ContextType>
