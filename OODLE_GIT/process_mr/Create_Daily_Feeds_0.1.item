@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_cilEoJ5XEeeC4rjDidDBug" defaultContext="Default" jobType="Big_Data_Batch" framework="Spark">
+  <context xmi:id="_cilEoZ5XEeeC4rjDidDBug" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_cilEop5XEeeC4rjDidDBug" comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_cilEo55XEeeC4rjDidDBug" comment="" name="S3_Access_Key" prompt="S3_Access_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value="AKIAIN3EDR4UIF2VLHIA"/>
+    <contextParameter xmi:id="_cilEpJ5XEeeC4rjDidDBug" comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_Password" value="vG6qb1/8ILwDyzvFDcONZYeRt+xtmA7LEyVhIiDBU3XmPwhiC7wQyhvPd+gown0k"/>
+    <contextParameter xmi:id="_cilEpZ5XEeeC4rjDidDBug" comment="" name="S3_Source_Bucket" prompt="S3_Source_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value="oodle-raw"/>
+    <contextParameter xmi:id="_cilEpp5XEeeC4rjDidDBug" comment="" name="S3_Source_Folder_Name" prompt="S3_Source_Folder_Name?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
+    <contextParameter xmi:id="_cilEp55XEeeC4rjDidDBug" comment="" name="S3_Target_Bucket" prompt="S3_Target_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value="oodle-harmonized"/>
+    <contextParameter xmi:id="_cilEqJ5XEeeC4rjDidDBug" comment="" name="S3_Target_Folder_Name" prompt="S3_Target_Folder_Name?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
+    <contextParameter xmi:id="_cilEqZ5XEeeC4rjDidDBug" comment="" name="Hadoop_JobHistory" prompt="Hadoop_JobHistory?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8030"/>
+    <contextParameter xmi:id="_cilEqp5XEeeC4rjDidDBug" comment="" name="Hadoop_ResourceManager" prompt="Hadoop_ResourceManager?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8032"/>
+    <contextParameter xmi:id="_cilEq55XEeeC4rjDidDBug" comment="" name="Hadoop_ResourceManagerScheduler" prompt="Hadoop_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8030"/>
+    <contextParameter xmi:id="_cilErJ5XEeeC4rjDidDBug" comment="" name="Hadoop_STG_DIR" prompt="Hadoop_STG_DIR?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_cilErZ5XEeeC4rjDidDBug" comment="" name="Hadoop_URI" prompt="Hadoop_URI?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="hdfs://ec2-34-204-176-3.compute-1.amazonaws.com:8020"/>
+    <contextParameter xmi:id="_cilErp5XEeeC4rjDidDBug" comment="" name="Hadoop_username" prompt="Hadoop_username?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="hadoop"/>
+    <contextParameter xmi:id="_cilEr55XEeeC4rjDidDBug" comment="" name="Hive_AdditionalJDBCParameters" prompt="Hive_AdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
+    <contextParameter xmi:id="_cilEsJ5XEeeC4rjDidDBug" comment="" name="Hive_Database" prompt="Hive_Database?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="oodle"/>
+    <contextParameter xmi:id="_cilEsZ5XEeeC4rjDidDBug" comment="" name="Hive_Password" prompt="Hive_Password?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_Password" value=""/>
+    <contextParameter xmi:id="_cilEsp5XEeeC4rjDidDBug" comment="" name="Hive_Port" prompt="Hive_Port?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="10000"/>
+    <contextParameter xmi:id="_cilEs55XEeeC4rjDidDBug" comment="" name="Hive_Server" prompt="Hive_Server?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="ec2-34-231-110-244.compute-1.amazonaws.com"/>
+    <contextParameter xmi:id="_cilEtJ5XEeeC4rjDidDBug" comment="" name="Hive_Username" prompt="Hive_Username?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="hadoop"/>
+    <contextParameter xmi:id="_cilEtZ5XEeeC4rjDidDBug" comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/hadoop/oodle/param/config_param.txt"/>
+    <contextParameter xmi:id="_cilEtp5XEeeC4rjDidDBug" comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/DailyFeeds/"/>
+    <contextParameter xmi:id="_cilEt55XEeeC4rjDidDBug" comment="" name="HDFS_Stg_Output_Path" prompt="HDFS_Stg_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/tmp/"/>
+    <contextParameter xmi:id="_cilEuJ5XEeeC4rjDidDBug" comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodlle/"/>
+    <contextParameter xmi:id="_cilEuZ5XEeeC4rjDidDBug" comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/hadoop/oodle/param/input_data.txt"/>
+    <contextParameter xmi:id="_cilEup5XEeeC4rjDidDBug" comment="" name="JsonSerDeJarPath" prompt="JsonSerDeJarPath?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/hadoop/oodle/jar/json-serde-1.3.7-jar-with-dependencies.jar"/>
+  </context>
+  <parameters xmi:id="_cilEu55XEeeC4rjDidDBug">
+    <elementParameter xmi:id="_cilEvJ5XEeeC4rjDidDBug" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_cilEvZ5XEeeC4rjDidDBug" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_cilEvp5XEeeC4rjDidDBug" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_cilEv55XEeeC4rjDidDBug" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_cilEwJ5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_cilEwZ5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_cilEwp5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_cilEw55XEeeC4rjDidDBug" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_cilExJ5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_cilExZ5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_cilExp5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_cilEx55XEeeC4rjDidDBug" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_cilEyJ5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_cilEyZ5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_cilEyp5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_cilEy55XEeeC4rjDidDBug" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_cilEzJ5XEeeC4rjDidDBug" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_cilEzZ5XEeeC4rjDidDBug" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_cilEzp5XEeeC4rjDidDBug" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_cilEz55XEeeC4rjDidDBug" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_cilE0J5XEeeC4rjDidDBug" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_cilE0Z5XEeeC4rjDidDBug" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_cilE0p5XEeeC4rjDidDBug" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE055XEeeC4rjDidDBug" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE1J5XEeeC4rjDidDBug" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE1Z5XEeeC4rjDidDBug" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE1p5XEeeC4rjDidDBug" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_cilE155XEeeC4rjDidDBug" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_cilE2J5XEeeC4rjDidDBug" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_cilE2Z5XEeeC4rjDidDBug" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_cilE2p5XEeeC4rjDidDBug" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE255XEeeC4rjDidDBug" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_cilE3J5XEeeC4rjDidDBug" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE3Z5XEeeC4rjDidDBug" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE3p5XEeeC4rjDidDBug" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE355XEeeC4rjDidDBug" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE4J5XEeeC4rjDidDBug" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE4Z5XEeeC4rjDidDBug" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE4p5XEeeC4rjDidDBug" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE455XEeeC4rjDidDBug" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE5J5XEeeC4rjDidDBug" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cilE5Z5XEeeC4rjDidDBug" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE5p5XEeeC4rjDidDBug" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE555XEeeC4rjDidDBug" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE6J5XEeeC4rjDidDBug" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_cilE6Z5XEeeC4rjDidDBug" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_cilE6p5XEeeC4rjDidDBug" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE655XEeeC4rjDidDBug" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE7J5XEeeC4rjDidDBug" field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE7Z5XEeeC4rjDidDBug" field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE7p5XEeeC4rjDidDBug" field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_cilE755XEeeC4rjDidDBug" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_cilE8J5XEeeC4rjDidDBug" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_cilE8Z5XEeeC4rjDidDBug" field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE8p5XEeeC4rjDidDBug" field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE855XEeeC4rjDidDBug" field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend Data Fabric 6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE9J5XEeeC4rjDidDBug" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE9Z5XEeeC4rjDidDBug" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE9p5XEeeC4rjDidDBug" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE955XEeeC4rjDidDBug" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_cilE-J5XEeeC4rjDidDBug" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_cilE-Z5XEeeC4rjDidDBug" field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_cilE-p5XEeeC4rjDidDBug" field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter xmi:id="_cilE-55XEeeC4rjDidDBug" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_cilE_J5XEeeC4rjDidDBug" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE_Z5XEeeC4rjDidDBug" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_cilE_p5XEeeC4rjDidDBug" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilE_55XEeeC4rjDidDBug" field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFAJ5XEeeC4rjDidDBug" field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFAZ5XEeeC4rjDidDBug" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFAp5XEeeC4rjDidDBug" field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFA55XEeeC4rjDidDBug" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFBJ5XEeeC4rjDidDBug" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFBZ5XEeeC4rjDidDBug" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFBp5XEeeC4rjDidDBug" field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFB55XEeeC4rjDidDBug" field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cilFCJ5XEeeC4rjDidDBug" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFCZ5XEeeC4rjDidDBug" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFCp5XEeeC4rjDidDBug" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFC55XEeeC4rjDidDBug" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFDJ5XEeeC4rjDidDBug" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_cilFDZ5XEeeC4rjDidDBug" field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_cilFDp5XEeeC4rjDidDBug" field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter xmi:id="_cilFD55XEeeC4rjDidDBug" field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFEJ5XEeeC4rjDidDBug" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_cilFEZ5XEeeC4rjDidDBug" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFEp5XEeeC4rjDidDBug" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_cilFE55XEeeC4rjDidDBug" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_cilFFJ5XEeeC4rjDidDBug" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_cilFFZ5XEeeC4rjDidDBug" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_cilFFp5XEeeC4rjDidDBug" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFF55XEeeC4rjDidDBug" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_cilFGJ5XEeeC4rjDidDBug" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_cilFGZ5XEeeC4rjDidDBug" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_cilFGp5XEeeC4rjDidDBug" field="CHECK" name="SPARK_LOCAL_MODE" value="false"/>
+    <elementParameter xmi:id="_cilFG55XEeeC4rjDidDBug" field="CLOSED_LIST" name="SPARK_LOCAL_VERSION" value="SPARK_2_0_0" show="false"/>
+    <elementParameter xmi:id="_cilFHJ5XEeeC4rjDidDBug" field="TECHNICAL" name="MR_PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cilFHZ5XEeeC4rjDidDBug" field="TECHNICAL" name="MR_PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zOshYJtQEeeaF4KtOHYPVg" show="false"/>
+    <elementParameter xmi:id="_cilFHp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="SPARK_VERSION" value="EMR_5_0_0"/>
+    <elementParameter xmi:id="_cilFH55XEeeC4rjDidDBug" field="HADOOP_DISTRIBUTION" name="SPARKBATCH" value=""/>
+    <elementParameter xmi:id="_cilFIJ5XEeeC4rjDidDBug" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_cilFIZ5XEeeC4rjDidDBug" field="LABEL" name="NOTE" value="** The version of Spark must be 1.3.0 or later." show="false"/>
+    <elementParameter xmi:id="_cilFIp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="SPARK_API_VERSION" value="SPARK_200" show="false"/>
+    <elementParameter xmi:id="_cilFI55XEeeC4rjDidDBug" field="CLOSED_LIST" name="SPARK_MODE" value="YARN_CLIENT"/>
+    <elementParameter xmi:id="_cilFJJ5XEeeC4rjDidDBug" field="TEXT" name="RESOURCE_MANAGER" value="&quot;ec2-34-231-110-244.compute-1.amazonaws.com:8032&quot;"/>
+    <elementParameter xmi:id="_cilFJZ5XEeeC4rjDidDBug" field="CHECK" name="SET_SCHEDULER_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_cilFJp5XEeeC4rjDidDBug" field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;ec2-34-231-110-244.compute-1.amazonaws.com:8030&quot;"/>
+    <elementParameter xmi:id="_cilFJ55XEeeC4rjDidDBug" field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_cilFKJ5XEeeC4rjDidDBug" field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;ec2-34-231-110-244.compute-1.amazonaws.com:10020&quot;"/>
+    <elementParameter xmi:id="_cilFKZ5XEeeC4rjDidDBug" field="CHECK" name="SET_STAGING_DIRECTORY" value="true"/>
+    <elementParameter xmi:id="_cilFKp5XEeeC4rjDidDBug" field="TEXT" name="STAGING_DIRECTORY" value="&quot;/user&quot;"/>
+    <elementParameter xmi:id="_cilFK55XEeeC4rjDidDBug" field="TEXT" name="HDINSIGHT_ENDPOINT" value="&quot;https://xxxx.azurehdinsight.net&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFLJ5XEeeC4rjDidDBug" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFLZ5XEeeC4rjDidDBug" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cilFLp5XEeeC4rjDidDBug" field="TEXT" name="LIVY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFL55XEeeC4rjDidDBug" field="TEXT" name="LIVY_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFMJ5XEeeC4rjDidDBug" field="TEXT" name="LIVY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFMZ5XEeeC4rjDidDBug" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFMp5XEeeC4rjDidDBug" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cilFM55XEeeC4rjDidDBug" field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFNJ5XEeeC4rjDidDBug" field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFNZ5XEeeC4rjDidDBug" field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFNp5XEeeC4rjDidDBug" field="PASSWORD" name="WASB_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cilFN55XEeeC4rjDidDBug" field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFOJ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_HOST" value="&quot;spark://localhost:7077&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFOZ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_HOME" value="&quot;/usr/lib/spark&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFOp5XEeeC4rjDidDBug" field="CHECK" name="DEFINE_HADOOP_HOME_DIR" value="false"/>
+    <elementParameter xmi:id="_cilFO55XEeeC4rjDidDBug" field="TEXT" name="HADOOP_HOME_DIR" value="&quot;C:/Talend/winutils&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFPJ5XEeeC4rjDidDBug" field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" value="false"/>
+    <elementParameter xmi:id="_cilFPZ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_DRIVER_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFPp5XEeeC4rjDidDBug" field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFP55XEeeC4rjDidDBug" field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFQJ5XEeeC4rjDidDBug" field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFQZ5XEeeC4rjDidDBug" field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFQp5XEeeC4rjDidDBug" field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFQ55XEeeC4rjDidDBug" field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFRJ5XEeeC4rjDidDBug" field="TEXT" name="USERNAME" value="&quot;hadoop&quot;"/>
+    <elementParameter xmi:id="_cilFRZ5XEeeC4rjDidDBug" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFRp5XEeeC4rjDidDBug" field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cilFR55XEeeC4rjDidDBug" field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFSJ5XEeeC4rjDidDBug" field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter xmi:id="_cilFSZ5XEeeC4rjDidDBug" field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFSp5XEeeC4rjDidDBug" field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFS55XEeeC4rjDidDBug" field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFTJ5XEeeC4rjDidDBug" field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFTZ5XEeeC4rjDidDBug" field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="false"/>
+    <elementParameter xmi:id="_cilFTp5XEeeC4rjDidDBug" field="TEXT" name="SPARK_DRIVER_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFT55XEeeC4rjDidDBug" field="TEXT" name="SPARK_DRIVER_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFUJ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_EXECUTOR_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFUZ5XEeeC4rjDidDBug" field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFUp5XEeeC4rjDidDBug" field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" value="&quot;384&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFU55XEeeC4rjDidDBug" field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFVJ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_EXECUTOR_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFVZ5XEeeC4rjDidDBug" field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" value="AUTO" show="false"/>
+    <elementParameter xmi:id="_cilFVp5XEeeC4rjDidDBug" field="TEXT" name="SPARK_EXECUTOR_INSTANCES" value="&quot;2&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFV55XEeeC4rjDidDBug" field="TEXT" name="SPARK_YARN_DYN_INIT" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFWJ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_YARN_DYN_MIN" value="&quot;0&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFWZ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_YARN_DYN_MAX" value="&quot;MAX&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFWp5XEeeC4rjDidDBug" field="CHECK" name="WEB_UI_PORT_CHECK" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFW55XEeeC4rjDidDBug" field="TEXT" name="WEB_UI_PORT" value="&quot;4040&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFXJ5XEeeC4rjDidDBug" field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" value="AUTO" show="false"/>
+    <elementParameter xmi:id="_cilFXZ5XEeeC4rjDidDBug" field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFXp5XEeeC4rjDidDBug" field="TEXT" name="SPARK_SERIALIZER" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFX55XEeeC4rjDidDBug" field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" value="false"/>
+    <elementParameter xmi:id="_cilFYJ5XEeeC4rjDidDBug" field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFYZ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_EVENT_LOG_DIR" value="&quot;hdfs://namenode:8020/user/spark/applicationHistory&quot;&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter xmi:id="_cilFYp5XEeeC4rjDidDBug" field="TEXT" name="SPARKHISTORY_ADDRESS" value="&quot;sparkHistoryServer:18080&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFY55XEeeC4rjDidDBug" field="CHECK" name="USE_CLOUDERA_NAVIGATOR" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFZJ5XEeeC4rjDidDBug" field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFZZ5XEeeC4rjDidDBug" field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter xmi:id="_cilFZp5XEeeC4rjDidDBug" field="TEXT" name="CLOUDERA_NAVIGATOR_URL" value="&quot;http://localhost:7187/api/v8/&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFZ55XEeeC4rjDidDBug" field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" value="&quot;http://localhost:7187/api/v8/metadata/plugin&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFaJ5XEeeC4rjDidDBug" field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" value="&quot;http://localhost&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFaZ5XEeeC4rjDidDBug" field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFap5XEeeC4rjDidDBug" field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFa55XEeeC4rjDidDBug" field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter xmi:id="_cilFbJ5XEeeC4rjDidDBug" field="CHECK" name="USE_ATLAS" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFbZ5XEeeC4rjDidDBug" field="TEXT" name="ATLAS_URL" value="&quot;http://localhost:21000&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFbp5XEeeC4rjDidDBug" field="TEXT" name="ATLAS_USERNAME" value="&quot;admin&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFb55XEeeC4rjDidDBug" field="PASSWORD" name="ATLAS_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cilFcJ5XEeeC4rjDidDBug" field="CHECK" name="SET_ATLAS_APPLICATION_PROPERTIES" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFcZ5XEeeC4rjDidDBug" field="TEXT" name="ATLAS_APPLICATION_PROPERTIES" value="&quot;/user/atlas/atlas-application.properties&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFcp5XEeeC4rjDidDBug" field="CHECK" name="ATLAS_DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFc55XEeeC4rjDidDBug" field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_cilFdJ5XEeeC4rjDidDBug" field="CHECK" name="USE_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_cilFdZ5XEeeC4rjDidDBug" field="TEXT" name="CHECKPOINT_DIR" value="&quot;file:///tmp/mycheckpoint&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFdp5XEeeC4rjDidDBug" field="TABLE" name="SPARK_ADVANCED_PROPERTIES"/>
+    <routinesParameter xmi:id="_a8DhPp2VEeepddv4c48Ucw" id="_HUmcAOL_EeahOPUz6AxSLw" name="DQTechnical"/>
+    <routinesParameter xmi:id="_a8DhP52VEeepddv4c48Ucw" id="_HTUppOL_EeahOPUz6AxSLw" name="DataMasking"/>
+    <routinesParameter xmi:id="_a8DhQJ2VEeepddv4c48Ucw" id="_HL390OL_EeahOPUz6AxSLw" name="DataOperation"/>
+    <routinesParameter xmi:id="_a8DhQZ2VEeepddv4c48Ucw" id="_HUOBg-L_EeahOPUz6AxSLw" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_a8DhQp2VEeepddv4c48Ucw" id="_HT7Gk-L_EeahOPUz6AxSLw" name="DataQuality"/>
+    <routinesParameter xmi:id="_a8DhQ52VEeepddv4c48Ucw" id="_HUXyheL_EeahOPUz6AxSLw" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_a8DhRJ2VEeepddv4c48Ucw" id="_HU9oYOL_EeahOPUz6AxSLw" name="MDM"/>
+    <routinesParameter xmi:id="_a8DhRZ2VEeepddv4c48Ucw" id="_HR_M4OL_EeahOPUz6AxSLw" name="Mathematical"/>
+    <routinesParameter xmi:id="_a8DhRp2VEeepddv4c48Ucw" id="_HSlCwOL_EeahOPUz6AxSLw" name="Numeric"/>
+    <routinesParameter xmi:id="_a8DhR52VEeepddv4c48Ucw" id="_HSuzw-L_EeahOPUz6AxSLw" name="Relational"/>
+    <routinesParameter xmi:id="_a8DhSJ2VEeepddv4c48Ucw" id="_HU9oZOL_EeahOPUz6AxSLw" name="SQLike"/>
+    <routinesParameter xmi:id="_a8DhSZ2VEeepddv4c48Ucw" id="_HS4kwOL_EeahOPUz6AxSLw" name="StringHandling"/>
+    <routinesParameter xmi:id="_a8DhSp2VEeepddv4c48Ucw" id="_HTLfs-L_EeahOPUz6AxSLw" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_a8DhS52VEeepddv4c48Ucw" id="_HTLft-L_EeahOPUz6AxSLw" name="TalendDate"/>
+    <routinesParameter xmi:id="_a8DhTJ2VEeepddv4c48Ucw" id="_HTUpoOL_EeahOPUz6AxSLw" name="TalendString"/>
+    <routinesParameter xmi:id="_a8DhTZ2VEeepddv4c48Ucw" id="_u96MQKZpEeaGEPDZIPK4pQ" name="ImporttweetsTstandardizerow_1"/>
+    <routinesParameter xmi:id="_a8DhTp2VEeepddv4c48Ucw" id="_ItRs4OMEEeahOPUz6AxSLw" name="Importtweets_deployTstandardizerow_1"/>
+    <routinesParameter xmi:id="_a8DhT52VEeepddv4c48Ucw" id="_TVdvcGcqEeOjappPcW-THA" name="Tweets_Generator"/>
+  </parameters>
+  <node xmi:id="_cilFd55XEeeC4rjDidDBug" componentName="tHiveConfiguration" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="32">
+    <elementParameter xmi:id="_cilFeJ5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cilFeZ5XEeeC4rjDidDBug" field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_0_0"/>
+    <elementParameter xmi:id="_cilFep5XEeeC4rjDidDBug" field="HADOOP_DISTRIBUTION" name="HIVEONSPARK" value=""/>
+    <elementParameter xmi:id="_cilFe55XEeeC4rjDidDBug" field="TEXT" name="HOST" value="context.Hive_Server"/>
+    <elementParameter xmi:id="_cilFfJ5XEeeC4rjDidDBug" field="TEXT" name="PORT" value="&quot;9083&quot;"/>
+    <elementParameter xmi:id="_cilFfZ5XEeeC4rjDidDBug" field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter xmi:id="_cilFfp5XEeeC4rjDidDBug" field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFf55XEeeC4rjDidDBug" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFgJ5XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="HiveConfiguration"/>
+    <elementParameter xmi:id="_cilFgZ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_cilFgp5XEeeC4rjDidDBug" componentName="tHDFSConfiguration" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
+    <elementParameter xmi:id="_cilFg55XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cilFhJ5XEeeC4rjDidDBug" field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_0_0"/>
+    <elementParameter xmi:id="_cilFhZ5XEeeC4rjDidDBug" field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter xmi:id="_cilFhp5XEeeC4rjDidDBug" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_cilFh55XEeeC4rjDidDBug" field="TEXT" name="FS_DEFAULT_NAME" value="context.Hadoop_URI"/>
+    <elementParameter xmi:id="_cilFiJ5XEeeC4rjDidDBug" field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFiZ5XEeeC4rjDidDBug" field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFip5XEeeC4rjDidDBug" field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFi55XEeeC4rjDidDBug" field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFjJ5XEeeC4rjDidDBug" field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFjZ5XEeeC4rjDidDBug" field="TEXT" name="USERNAME" value="context.Hadoop_username"/>
+    <elementParameter xmi:id="_cilFjp5XEeeC4rjDidDBug" field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFj55XEeeC4rjDidDBug" field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter xmi:id="_cilFkJ5XEeeC4rjDidDBug" field="TEXT" name="TEMP_FOLDER" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_cilFkZ5XEeeC4rjDidDBug" field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter xmi:id="_cilFkp5XEeeC4rjDidDBug" field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" value="&quot;kms://http@localhost:16000/kms&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFk55XEeeC4rjDidDBug" field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_cilFlJ5XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="HDFSConfiguration"/>
+    <elementParameter xmi:id="_cilFlZ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_cilFlp5XEeeC4rjDidDBug" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter xmi:id="_cilFl55XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_2" show="false"/>
+    <elementParameter xmi:id="_cilFmJ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_1"/>
+    <elementParameter xmi:id="_cilFmZ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cilFmp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cilFm55XEeeC4rjDidDBug" field="TEXT" name="HIVE_DATABASE_NAME" value="context.Hive_Database"/>
+    <elementParameter xmi:id="_cilFnJ5XEeeC4rjDidDBug" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;fitbit_daily_feed&quot;"/>
+    <elementParameter xmi:id="_cilFnZ5XEeeC4rjDidDBug" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFnp5XEeeC4rjDidDBug" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilFn55XEeeC4rjDidDBug" field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter xmi:id="_cilFoJ5XEeeC4rjDidDBug" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cilFoZ5XEeeC4rjDidDBug" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cilFop5XEeeC4rjDidDBug" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cilFo55XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="Fitbit_Daily_Feeds"/>
+    <elementParameter xmi:id="_cilFpJ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilFpZ5XEeeC4rjDidDBug" connector="FLOW" name="tHiveInput_2">
+      <column xmi:id="_cilFpp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFp55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFqJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EventDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFqZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Activity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFqp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="MinutesFairlyActive" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFq55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="HeartRate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFrJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Calories" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFrZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Steps" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFrp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Weight" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFr55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="BMR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_cilFsJ5XEeeC4rjDidDBug" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="448">
+    <elementParameter xmi:id="_cilFsZ5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter xmi:id="_cilFsp5XEeeC4rjDidDBug" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_cilFs55XEeeC4rjDidDBug" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_cilFtJ5XEeeC4rjDidDBug" field="CHECK" name="REPLICATED_JOIN" value="true"/>
+    <elementParameter xmi:id="_cilFtZ5XEeeC4rjDidDBug" field="IMAGE" name="PREVIEW" value="_a4XTsZ2VEeepddv4c48Ucw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_cilFtp5XEeeC4rjDidDBug" field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter xmi:id="_cilFt55XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="temp"/>
+    <elementParameter xmi:id="_cilFuJ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilFuZ5XEeeC4rjDidDBug" connector="FLOW" name="outmap">
+      <column xmi:id="_cilFup5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFu55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFvJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EventDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFvZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Activity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFvp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="MinutesFairlyActive" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFv55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="HeartRate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFwJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Calories" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFwZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Steps" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFwp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Weight" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFw55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="BMR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFxJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="FirstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFxZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="LastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFxp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFx55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFyJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFyZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFyp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFy55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFzJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFzZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFzp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilFz55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilF0J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData" xmi:id="_cilF0Z5XEeeC4rjDidDBug">
+      <uiProperties xmi:id="_cilF0p5XEeeC4rjDidDBug"/>
+      <varTables xmi:id="_cilF055XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_cilF1J5XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="outmap">
+        <mapperTableEntries xmi:id="_cilF1Z5XEeeC4rjDidDBug" name="CustomerID" expression="row1.CustomerID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF1p5XEeeC4rjDidDBug" name="Phone" expression="row1.Phone " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF155XEeeC4rjDidDBug" name="EventDate" expression="row1.EventDate " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF2J5XEeeC4rjDidDBug" name="Activity" expression="row1.Activity " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF2Z5XEeeC4rjDidDBug" name="MinutesFairlyActive" expression="row1.MinutesFairlyActive " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF2p5XEeeC4rjDidDBug" name="HeartRate" expression="row1.HeartRate " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF255XEeeC4rjDidDBug" name="Calories" expression="row1.Calories " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF3J5XEeeC4rjDidDBug" name="Steps" expression="row1.Steps " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF3Z5XEeeC4rjDidDBug" name="Weight" expression="row1.Weight " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF3p5XEeeC4rjDidDBug" name="BMR" expression="row1.BMR " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF355XEeeC4rjDidDBug" name="FirstName" expression="row2.FirstName " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF4J5XEeeC4rjDidDBug" name="LastName" expression="row2.LastName " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF4Z5XEeeC4rjDidDBug" name="Address" expression="row2.Address " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF4p5XEeeC4rjDidDBug" name="City" expression="row2.City " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF455XEeeC4rjDidDBug" name="State" expression="row2.State " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF5J5XEeeC4rjDidDBug" name="Zip" expression="row2.Zip " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF5Z5XEeeC4rjDidDBug" name="EmailId" expression="row2.EmailId " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF5p5XEeeC4rjDidDBug" name="Gender" expression="row2.Gender " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF555XEeeC4rjDidDBug" name="Physician_Id" expression="row2.Physician_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF6J5XEeeC4rjDidDBug" name="Provider_Id" expression="row2.Proviser_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF6Z5XEeeC4rjDidDBug" name="Country" expression="row2.Country " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF6p5XEeeC4rjDidDBug" name="Goal" expression="((row2.Age &lt; 40)? 10000:((row2.Age &lt; 50)? 7000:5000)) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF655XEeeC4rjDidDBug" name="Goal_Status" expression="((row2.Age &lt; 40 &amp;&amp; row1.Steps &lt;= 9999)? &quot;N&quot;:((row2.Age >= 40 &amp;&amp; row2.Age &lt; 50 &amp;&amp; row1.Steps &lt;= 6999)? &quot;N&quot;:((row2.Age >= 50 &amp;&amp; row1.Steps &lt;= 4999)? &quot;N&quot;:&quot;Y&quot;))) " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_cilF7J5XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cilF7Z5XEeeC4rjDidDBug" name="CustomerID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF7p5XEeeC4rjDidDBug" name="Phone" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF755XEeeC4rjDidDBug" name="EventDate" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF8J5XEeeC4rjDidDBug" name="Activity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF8Z5XEeeC4rjDidDBug" name="MinutesFairlyActive" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF8p5XEeeC4rjDidDBug" name="HeartRate" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF855XEeeC4rjDidDBug" name="Calories" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF9J5XEeeC4rjDidDBug" name="Steps" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF9Z5XEeeC4rjDidDBug" name="Weight" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF9p5XEeeC4rjDidDBug" name="BMR" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_cilF955XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries xmi:id="_cilF-J5XEeeC4rjDidDBug" name="CustomerID" expression="row1.CustomerID " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries xmi:id="_cilF-Z5XEeeC4rjDidDBug" name="FirstName" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF-p5XEeeC4rjDidDBug" name="LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF-55XEeeC4rjDidDBug" name="Address" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF_J5XEeeC4rjDidDBug" name="City" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF_Z5XEeeC4rjDidDBug" name="State" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF_p5XEeeC4rjDidDBug" name="Zip" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilF_55XEeeC4rjDidDBug" name="Phone" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGAJ5XEeeC4rjDidDBug" name="EmailId" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGAZ5XEeeC4rjDidDBug" name="Gender" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGAp5XEeeC4rjDidDBug" name="Age" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGA55XEeeC4rjDidDBug" name="Physician_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGBJ5XEeeC4rjDidDBug" name="Proviser_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGBZ5XEeeC4rjDidDBug" name="Country" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_cilGBp5XEeeC4rjDidDBug" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
+    <elementParameter xmi:id="_cilGB55XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_1" show="false"/>
+    <elementParameter xmi:id="_cilGCJ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_1"/>
+    <elementParameter xmi:id="_cilGCZ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cilGCp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cilGC55XEeeC4rjDidDBug" field="TEXT" name="HIVE_DATABASE_NAME" value="context.Hive_Database"/>
+    <elementParameter xmi:id="_cilGDJ5XEeeC4rjDidDBug" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;customer&quot;"/>
+    <elementParameter xmi:id="_cilGDZ5XEeeC4rjDidDBug" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cilGDp5XEeeC4rjDidDBug" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilGD55XEeeC4rjDidDBug" field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter xmi:id="_cilGEJ5XEeeC4rjDidDBug" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cilGEZ5XEeeC4rjDidDBug" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cilGEp5XEeeC4rjDidDBug" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cilGE55XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="Customer"/>
+    <elementParameter xmi:id="_cilGFJ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilGFZ5XEeeC4rjDidDBug" connector="FLOW" name="tHiveInput_1">
+      <column xmi:id="_cilGFp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGF55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="FirstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGGJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="LastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGGZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGGp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGG55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGHJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGHZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGHp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGH55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGIJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Age" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGIZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGIp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Proviser_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGI55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_cilGJJ5XEeeC4rjDidDBug" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="448">
+    <elementParameter xmi:id="_cilGJZ5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter xmi:id="_cilGJp5XEeeC4rjDidDBug" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_cilGJ55XEeeC4rjDidDBug" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_cilGKJ5XEeeC4rjDidDBug" field="CHECK" name="REPLICATED_JOIN" value="true"/>
+    <elementParameter xmi:id="_cilGKZ5XEeeC4rjDidDBug" field="IMAGE" name="PREVIEW" value="_a4XTsZ2VEeepddv4c48Ucw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_cilGKp5XEeeC4rjDidDBug" field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter xmi:id="_cilGK55XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="map"/>
+    <elementParameter xmi:id="_cilGLJ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilGLZ5XEeeC4rjDidDBug" connector="FLOW" name="outfinal">
+      <column xmi:id="_cilGLp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGL55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGMJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EventDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGMZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Activity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGMp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="MinutesFairlyActive" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGM55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="HeartRate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGNJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Calories" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGNZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Steps" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGNp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Weight" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGN55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="BMR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGOJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="FirstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGOZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="LastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGOp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGO55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGPJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGPZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGPp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGP55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGQJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGQZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGQp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGQ55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGRJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address_2" nullable="true" originalDbColumnName="Address" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGRZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City_2" nullable="true" originalDbColumnName="City" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGRp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State_2" nullable="true" originalDbColumnName="State" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGR55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country_2" nullable="true" originalDbColumnName="Country" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGSJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip_2" nullable="true" originalDbColumnName="Zip" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGSZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGSp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGS55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGTJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData" xmi:id="_cilGTZ5XEeeC4rjDidDBug">
+      <uiProperties xmi:id="_cilGTp5XEeeC4rjDidDBug"/>
+      <varTables xmi:id="_cilGT55XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_cilGUJ5XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="outfinal">
+        <mapperTableEntries xmi:id="_cilGUZ5XEeeC4rjDidDBug" name="CustomerID" expression="outmap.CustomerID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGUp5XEeeC4rjDidDBug" name="Phone" expression="outmap.Phone " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGU55XEeeC4rjDidDBug" name="EventDate" expression="outmap.EventDate " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGVJ5XEeeC4rjDidDBug" name="Activity" expression="outmap.Activity " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGVZ5XEeeC4rjDidDBug" name="MinutesFairlyActive" expression="outmap.MinutesFairlyActive " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGVp5XEeeC4rjDidDBug" name="HeartRate" expression="outmap.HeartRate " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGV55XEeeC4rjDidDBug" name="Calories" expression="outmap.Calories " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGWJ5XEeeC4rjDidDBug" name="Steps" expression="outmap.Steps " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGWZ5XEeeC4rjDidDBug" name="Weight" expression="outmap.Weight " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGWp5XEeeC4rjDidDBug" name="BMR" expression="outmap.BMR " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGW55XEeeC4rjDidDBug" name="FirstName" expression="outmap.FirstName " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGXJ5XEeeC4rjDidDBug" name="LastName" expression="outmap.LastName " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGXZ5XEeeC4rjDidDBug" name="Address" expression="outmap.Address " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGXp5XEeeC4rjDidDBug" name="City" expression="outmap.City " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGX55XEeeC4rjDidDBug" name="State" expression="outmap.State " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGYJ5XEeeC4rjDidDBug" name="Zip" expression="outmap.Zip " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGYZ5XEeeC4rjDidDBug" name="EmailId" expression="outmap.EmailId " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGYp5XEeeC4rjDidDBug" name="Gender" expression="outmap.Gender " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGY55XEeeC4rjDidDBug" name="Physician_Id" expression="outmap.Physician_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGZJ5XEeeC4rjDidDBug" name="Provider_Id" expression="outmap.Provider_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGZZ5XEeeC4rjDidDBug" name="Country" expression="outmap.Country " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGZp5XEeeC4rjDidDBug" name="Physician_Name" expression="row4.Physician_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGZ55XEeeC4rjDidDBug" name="Address_2" expression="row4.Address " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGaJ5XEeeC4rjDidDBug" name="City_2" expression="row4.City " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGaZ5XEeeC4rjDidDBug" name="State_2" expression="row4.State " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGap5XEeeC4rjDidDBug" name="Country_2" expression="row4.Country " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGa55XEeeC4rjDidDBug" name="Zip_2" expression="row4.Zip " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGbJ5XEeeC4rjDidDBug" name="Physician_email" expression="row4.Physician_email " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGbZ5XEeeC4rjDidDBug" name="Physician_phone" expression="row4.Physician_phone " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGbp5XEeeC4rjDidDBug" name="Goal" expression="outmap.Goal " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGb55XEeeC4rjDidDBug" name="Goal_Status" expression="outmap.Goal_Status " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_cilGcJ5XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="outmap" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cilGcZ5XEeeC4rjDidDBug" name="CustomerID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGcp5XEeeC4rjDidDBug" name="Phone" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGc55XEeeC4rjDidDBug" name="EventDate" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGdJ5XEeeC4rjDidDBug" name="Activity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGdZ5XEeeC4rjDidDBug" name="MinutesFairlyActive" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGdp5XEeeC4rjDidDBug" name="HeartRate" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGd55XEeeC4rjDidDBug" name="Calories" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGeJ5XEeeC4rjDidDBug" name="Steps" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGeZ5XEeeC4rjDidDBug" name="Weight" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGep5XEeeC4rjDidDBug" name="BMR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGe55XEeeC4rjDidDBug" name="FirstName" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGfJ5XEeeC4rjDidDBug" name="LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGfZ5XEeeC4rjDidDBug" name="Address" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGfp5XEeeC4rjDidDBug" name="City" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGf55XEeeC4rjDidDBug" name="State" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGgJ5XEeeC4rjDidDBug" name="Zip" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGgZ5XEeeC4rjDidDBug" name="EmailId" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGgp5XEeeC4rjDidDBug" name="Gender" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGg55XEeeC4rjDidDBug" name="Physician_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGhJ5XEeeC4rjDidDBug" name="Provider_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGhZ5XEeeC4rjDidDBug" name="Country" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGhp5XEeeC4rjDidDBug" name="Goal" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGh55XEeeC4rjDidDBug" name="Goal_Status" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_cilGiJ5XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries xmi:id="_cilGiZ5XEeeC4rjDidDBug" name="Physician_Id" expression="outmap.Physician_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGip5XEeeC4rjDidDBug" name="Physician_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGi55XEeeC4rjDidDBug" name="Address" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGjJ5XEeeC4rjDidDBug" name="City" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGjZ5XEeeC4rjDidDBug" name="State" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGjp5XEeeC4rjDidDBug" name="Country" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGj55XEeeC4rjDidDBug" name="Zip" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGkJ5XEeeC4rjDidDBug" name="Physician_email" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilGkZ5XEeeC4rjDidDBug" name="Physician_phone" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_cilGkp5XEeeC4rjDidDBug" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="320">
+    <elementParameter xmi:id="_cilGk55XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_4" show="false"/>
+    <elementParameter xmi:id="_cilGlJ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_1"/>
+    <elementParameter xmi:id="_cilGlZ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cilGlp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cilGl55XEeeC4rjDidDBug" field="TEXT" name="HIVE_DATABASE_NAME" value="context.Hive_Database"/>
+    <elementParameter xmi:id="_cilGmJ5XEeeC4rjDidDBug" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;physician&quot;"/>
+    <elementParameter xmi:id="_cilGmZ5XEeeC4rjDidDBug" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cilGmp5XEeeC4rjDidDBug" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilGm55XEeeC4rjDidDBug" field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter xmi:id="_cilGnJ5XEeeC4rjDidDBug" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cilGnZ5XEeeC4rjDidDBug" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cilGnp5XEeeC4rjDidDBug" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cilGn55XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="Physician"/>
+    <elementParameter xmi:id="_cilGoJ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilGoZ5XEeeC4rjDidDBug" connector="FLOW" name="tHiveInput_4">
+      <column xmi:id="_cilGop5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGo55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGpJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGpZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGpp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGp55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGqJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGqZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGqp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_cilGq55XEeeC4rjDidDBug" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="448">
+    <elementParameter xmi:id="_cilGrJ5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter xmi:id="_cilGrZ5XEeeC4rjDidDBug" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_cilGrp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_cilGr55XEeeC4rjDidDBug" field="CHECK" name="REPLICATED_JOIN" value="true"/>
+    <elementParameter xmi:id="_cilGsJ5XEeeC4rjDidDBug" field="IMAGE" name="PREVIEW" value="_a4XTsZ2VEeepddv4c48Ucw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_cilGsZ5XEeeC4rjDidDBug" field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter xmi:id="_cilGsp5XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="final_map"/>
+    <elementParameter xmi:id="_cilGs55XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilGtJ5XEeeC4rjDidDBug" connector="FLOW" name="Final_Map">
+      <column xmi:id="_cilGtZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGtp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGt55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EventDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGuJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Activity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGuZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="MinutesFairlyActive" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGup5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="HeartRate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGu55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Calories" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGvJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Steps" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGvZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Weight" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGvp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="BMR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGv55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="FirstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGwJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="LastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGwZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGwp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGw55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGxJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGxZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGxp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGx55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGyJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGyZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGyp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGy55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGzJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGzZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGzp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilGz55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG0J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG0Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG0p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG055XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG1J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG1Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG1p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG155XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG2J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG2Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId_1" nullable="true" originalDbColumnName="EmailId" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG2p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilG255XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData" xmi:id="_cilG3J5XEeeC4rjDidDBug">
+      <uiProperties xmi:id="_cilG3Z5XEeeC4rjDidDBug"/>
+      <varTables xmi:id="_cilG3p5XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_cilG355XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="Final_Map">
+        <mapperTableEntries xmi:id="_cilG4J5XEeeC4rjDidDBug" name="CustomerID" expression="outfinal.CustomerID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG4Z5XEeeC4rjDidDBug" name="Phone" expression="outfinal.Phone " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG4p5XEeeC4rjDidDBug" name="EventDate" expression="outfinal.EventDate " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG455XEeeC4rjDidDBug" name="Activity" expression="outfinal.Activity " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG5J5XEeeC4rjDidDBug" name="MinutesFairlyActive" expression="outfinal.MinutesFairlyActive " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG5Z5XEeeC4rjDidDBug" name="HeartRate" expression="outfinal.HeartRate " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG5p5XEeeC4rjDidDBug" name="Calories" expression="outfinal.Calories " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG555XEeeC4rjDidDBug" name="Steps" expression="outfinal.Steps " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG6J5XEeeC4rjDidDBug" name="Weight" expression="outfinal.Weight " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG6Z5XEeeC4rjDidDBug" name="BMR" expression="outfinal.BMR " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG6p5XEeeC4rjDidDBug" name="FirstName" expression="outfinal.FirstName " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG655XEeeC4rjDidDBug" name="LastName" expression="outfinal.LastName " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG7J5XEeeC4rjDidDBug" name="Address" expression="outfinal.Address " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG7Z5XEeeC4rjDidDBug" name="City" expression="outfinal.City " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG7p5XEeeC4rjDidDBug" name="State" expression="outfinal.State " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG755XEeeC4rjDidDBug" name="Zip" expression="outfinal.Zip " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG8J5XEeeC4rjDidDBug" name="EmailId" expression="outfinal.EmailId " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG8Z5XEeeC4rjDidDBug" name="Gender" expression="outfinal.Gender " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG8p5XEeeC4rjDidDBug" name="Country" expression="outfinal.Country " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG855XEeeC4rjDidDBug" name="Physician_Id" expression="outfinal.Physician_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG9J5XEeeC4rjDidDBug" name="Provider_Id" expression="outfinal.Provider_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG9Z5XEeeC4rjDidDBug" name="Physician_Name" expression="outfinal.Physician_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG9p5XEeeC4rjDidDBug" name="Physician_Address" expression="outfinal.Address_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG955XEeeC4rjDidDBug" name="Physician_City" expression="outfinal.City_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG-J5XEeeC4rjDidDBug" name="Physician_State" expression="outfinal.State_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG-Z5XEeeC4rjDidDBug" name="Physician_Country" expression="outfinal.Country_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG-p5XEeeC4rjDidDBug" name="Physician_Zip" expression="outfinal.Zip_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG-55XEeeC4rjDidDBug" name="Physician_email" expression="outfinal.Physician_email " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG_J5XEeeC4rjDidDBug" name="Physician_phone" expression="outfinal.Physician_phone " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG_Z5XEeeC4rjDidDBug" name="Provider_name" expression="row3.Provide_name " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG_p5XEeeC4rjDidDBug" name="Provider_Address" expression="row3.Address " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilG_55XEeeC4rjDidDBug" name="Provider_City" expression="row3.City " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHAJ5XEeeC4rjDidDBug" name="Provider_State" expression="row3.State " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHAZ5XEeeC4rjDidDBug" name="Provider_Country" expression="row3.Country " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHAp5XEeeC4rjDidDBug" name="Provider_Zip" expression="row3.Zip " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHA55XEeeC4rjDidDBug" name="Provider_Phone" expression="row3.Phone " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHBJ5XEeeC4rjDidDBug" name="EmailId_1" expression="row3.EmailId " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHBZ5XEeeC4rjDidDBug" name="Goal" expression="outfinal.Goal " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHBp5XEeeC4rjDidDBug" name="Goal_Status" expression="outfinal.Goal_Status " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_cilHB55XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="outfinal" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cilHCJ5XEeeC4rjDidDBug" name="CustomerID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHCZ5XEeeC4rjDidDBug" name="Phone" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHCp5XEeeC4rjDidDBug" name="EventDate" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHC55XEeeC4rjDidDBug" name="Activity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHDJ5XEeeC4rjDidDBug" name="MinutesFairlyActive" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHDZ5XEeeC4rjDidDBug" name="HeartRate" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHDp5XEeeC4rjDidDBug" name="Calories" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHD55XEeeC4rjDidDBug" name="Steps" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHEJ5XEeeC4rjDidDBug" name="Weight" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHEZ5XEeeC4rjDidDBug" name="BMR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHEp5XEeeC4rjDidDBug" name="FirstName" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHE55XEeeC4rjDidDBug" name="LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHFJ5XEeeC4rjDidDBug" name="Address" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHFZ5XEeeC4rjDidDBug" name="City" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHFp5XEeeC4rjDidDBug" name="State" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHF55XEeeC4rjDidDBug" name="Zip" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHGJ5XEeeC4rjDidDBug" name="EmailId" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHGZ5XEeeC4rjDidDBug" name="Gender" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHGp5XEeeC4rjDidDBug" name="Physician_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHG55XEeeC4rjDidDBug" name="Provider_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHHJ5XEeeC4rjDidDBug" name="Country" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHHZ5XEeeC4rjDidDBug" name="Physician_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHHp5XEeeC4rjDidDBug" name="Address_2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHH55XEeeC4rjDidDBug" name="City_2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHIJ5XEeeC4rjDidDBug" name="State_2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHIZ5XEeeC4rjDidDBug" name="Country_2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHIp5XEeeC4rjDidDBug" name="Zip_2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHI55XEeeC4rjDidDBug" name="Physician_email" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHJJ5XEeeC4rjDidDBug" name="Physician_phone" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHJZ5XEeeC4rjDidDBug" name="Goal" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHJp5XEeeC4rjDidDBug" name="Goal_Status" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_cilHJ55XEeeC4rjDidDBug" sizeState="INTERMEDIATE" name="row3" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries xmi:id="_cilHKJ5XEeeC4rjDidDBug" name="Provider_id" expression="outfinal.Provider_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHKZ5XEeeC4rjDidDBug" name="Provide_name" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHKp5XEeeC4rjDidDBug" name="Address" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHK55XEeeC4rjDidDBug" name="City" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHLJ5XEeeC4rjDidDBug" name="State" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHLZ5XEeeC4rjDidDBug" name="Country" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHLp5XEeeC4rjDidDBug" name="Zip" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHL55XEeeC4rjDidDBug" name="Phone" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cilHMJ5XEeeC4rjDidDBug" name="EmailId" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_cilHMZ5XEeeC4rjDidDBug" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="320">
+    <elementParameter xmi:id="_cilHMp5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_3" show="false"/>
+    <elementParameter xmi:id="_cilHM55XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_1"/>
+    <elementParameter xmi:id="_cilHNJ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cilHNZ5XEeeC4rjDidDBug" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cilHNp5XEeeC4rjDidDBug" field="TEXT" name="HIVE_DATABASE_NAME" value="context.Hive_Database"/>
+    <elementParameter xmi:id="_cilHN55XEeeC4rjDidDBug" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;provider&quot;"/>
+    <elementParameter xmi:id="_cilHOJ5XEeeC4rjDidDBug" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHOZ5XEeeC4rjDidDBug" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHOp5XEeeC4rjDidDBug" field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter xmi:id="_cilHO55XEeeC4rjDidDBug" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cilHPJ5XEeeC4rjDidDBug" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cilHPZ5XEeeC4rjDidDBug" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cilHPp5XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="Healthcare_Provider"/>
+    <elementParameter xmi:id="_cilHP55XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilHQJ5XEeeC4rjDidDBug" connector="FLOW" name="tHiveInput_3">
+      <column xmi:id="_cilHQZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHQp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provide_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHQ55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHRJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHRZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHRp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHR55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHSJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHSZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_cilHSp5XEeeC4rjDidDBug" componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="448">
+    <elementParameter xmi:id="_cilHS55XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
+    <elementParameter xmi:id="_cilHTJ5XEeeC4rjDidDBug" field="CHECK" name="CACHEOUTPUT" value="true"/>
+    <elementParameter xmi:id="_cilHTZ5XEeeC4rjDidDBug" field="CLOSED_LIST" name="STORAGELEVEL" value="MEMORY_ONLY"/>
+    <elementParameter xmi:id="_cilHTp5XEeeC4rjDidDBug" field="CHECK" name="COMPRESSRDD" value="false" show="false"/>
+    <elementParameter xmi:id="_cilHT55XEeeC4rjDidDBug" field="CLOSED_LIST" name="COMPRESSCODEC" value="org.apache.spark.io.SnappyCompressionCodec" show="false"/>
+    <elementParameter xmi:id="_cilHUJ5XEeeC4rjDidDBug" field="TEXT" name="TACHYON_STORE_URL" value="&quot;tachyon://localhost:19998&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHUZ5XEeeC4rjDidDBug" field="TEXT" name="TACHYON_STORE_BASEDIR" value="&quot;/tmp/&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHUp5XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="move_to_hdfs_s3"/>
+    <elementParameter xmi:id="_cilHU55XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilHVJ5XEeeC4rjDidDBug" connector="FLOW" name="tReplicate_1">
+      <column xmi:id="_cilHVZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHVp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHV55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EventDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHWJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Activity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHWZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="MinutesFairlyActive" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHWp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="HeartRate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHW55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Calories" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHXJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Steps" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHXZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Weight" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHXp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="BMR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHX55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="FirstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHYJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="LastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHYZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHYp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHY55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHZJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHZZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHZp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHZ55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHaJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHaZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHap5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHa55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHbJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHbZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHbp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHb55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHcJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHcZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHcp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHc55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHdJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHdZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHdp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHd55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHeJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHeZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId_1" nullable="true" originalDbColumnName="EmailId" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHep5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHe55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata xmi:id="_cilHfJ5XEeeC4rjDidDBug" connector="SPARKCOMBINE" name="SPARKCOMBINE"/>
+  </node>
+  <node xmi:id="_cilHfZ5XEeeC4rjDidDBug" componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
+    <elementParameter xmi:id="_cilHfp5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_cilHf55XEeeC4rjDidDBug" field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true"/>
+    <elementParameter xmi:id="_cilHgJ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cilHgZ5XEeeC4rjDidDBug" field="DIRECTORY_HADOOP" name="FOLDER" value="context.HDFS_OutputDailyFeedDir"/>
+    <elementParameter xmi:id="_cilHgp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
+    <elementParameter xmi:id="_cilHg55XEeeC4rjDidDBug" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_cilHhJ5XEeeC4rjDidDBug" field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter xmi:id="_cilHhZ5XEeeC4rjDidDBug" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHhp5XEeeC4rjDidDBug" field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter xmi:id="_cilHh55XEeeC4rjDidDBug" field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter xmi:id="_cilHiJ5XEeeC4rjDidDBug" field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter xmi:id="_cilHiZ5XEeeC4rjDidDBug" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHip5XEeeC4rjDidDBug" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter xmi:id="_cilHi55XEeeC4rjDidDBug" field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter xmi:id="_cilHjJ5XEeeC4rjDidDBug" field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter xmi:id="_cilHjZ5XEeeC4rjDidDBug" field="CHECK" name="MERGE_RESULT" value="false"/>
+    <elementParameter xmi:id="_cilHjp5XEeeC4rjDidDBug" field="FILE_HADOOP" name="MERGE_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHj55XEeeC4rjDidDBug" field="CHECK" name="REMOVE_FILE" value="false" show="false"/>
+    <elementParameter xmi:id="_cilHkJ5XEeeC4rjDidDBug" field="CHECK" name="REPLACE_FILE" value="true" show="false"/>
+    <elementParameter xmi:id="_cilHkZ5XEeeC4rjDidDBug" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_cilHkp5XEeeC4rjDidDBug" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHk55XEeeC4rjDidDBug" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHlJ5XEeeC4rjDidDBug" field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter xmi:id="_cilHlZ5XEeeC4rjDidDBug" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHlp5XEeeC4rjDidDBug" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHl55XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="Daily_Feeds_HDFS"/>
+    <elementParameter xmi:id="_cilHmJ5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilHmZ5XEeeC4rjDidDBug" connector="FLOW" name="tFileOutputDelimited_1">
+      <column xmi:id="_cilHmp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHm55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHnJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EventDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHnZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Activity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHnp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="MinutesFairlyActive" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHn55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="HeartRate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHoJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Calories" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHoZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Steps" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHop5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Weight" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHo55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="BMR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHpJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="FirstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHpZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="LastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHpp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHp55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHqJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHqZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHqp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHq55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHrJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHrZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHrp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHr55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHsJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHsZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHsp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHs55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHtJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHtZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHtp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHt55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHuJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHuZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHup5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHu55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHvJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHvZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHvp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId_1" nullable="true" originalDbColumnName="EmailId" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHv55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilHwJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_cilHwZ5XEeeC4rjDidDBug" componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="512">
+    <elementParameter xmi:id="_cilHwp5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter xmi:id="_cilHw55XEeeC4rjDidDBug" field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true"/>
+    <elementParameter xmi:id="_cilHxJ5XEeeC4rjDidDBug" field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tS3Configuration_1"/>
+    <elementParameter xmi:id="_cilHxZ5XEeeC4rjDidDBug" field="DIRECTORY_HADOOP" name="FOLDER" value="context.S3_Target_Folder_Name"/>
+    <elementParameter xmi:id="_cilHxp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
+    <elementParameter xmi:id="_cilHx55XEeeC4rjDidDBug" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_cilHyJ5XEeeC4rjDidDBug" field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter xmi:id="_cilHyZ5XEeeC4rjDidDBug" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHyp5XEeeC4rjDidDBug" field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter xmi:id="_cilHy55XEeeC4rjDidDBug" field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter xmi:id="_cilHzJ5XEeeC4rjDidDBug" field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter xmi:id="_cilHzZ5XEeeC4rjDidDBug" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter xmi:id="_cilHzp5XEeeC4rjDidDBug" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter xmi:id="_cilHz55XEeeC4rjDidDBug" field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter xmi:id="_cilH0J5XEeeC4rjDidDBug" field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter xmi:id="_cilH0Z5XEeeC4rjDidDBug" field="CHECK" name="MERGE_RESULT" value="false"/>
+    <elementParameter xmi:id="_cilH0p5XEeeC4rjDidDBug" field="FILE_HADOOP" name="MERGE_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilH055XEeeC4rjDidDBug" field="CHECK" name="REMOVE_FILE" value="false" show="false"/>
+    <elementParameter xmi:id="_cilH1J5XEeeC4rjDidDBug" field="CHECK" name="REPLACE_FILE" value="false" show="false"/>
+    <elementParameter xmi:id="_cilH1Z5XEeeC4rjDidDBug" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_cilH1p5XEeeC4rjDidDBug" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_cilH155XEeeC4rjDidDBug" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_cilH2J5XEeeC4rjDidDBug" field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter xmi:id="_cilH2Z5XEeeC4rjDidDBug" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilH2p5XEeeC4rjDidDBug" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cilH255XEeeC4rjDidDBug" field="TEXT" name="LABEL" value="Daily_Feeds_S3"/>
+    <elementParameter xmi:id="_cilH3J5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cilH3Z5XEeeC4rjDidDBug" connector="FLOW" name="tFileOutputDelimited_2">
+      <column xmi:id="_cilH3p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="CustomerID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH355XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH4J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EventDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH4Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Activity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH4p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="MinutesFairlyActive" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH455XEeeC4rjDidDBug" comment="" key="false" length="-1" name="HeartRate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH5J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Calories" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH5Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Steps" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH5p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Weight" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH555XEeeC4rjDidDBug" comment="" key="false" length="-1" name="BMR" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH6J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="FirstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH6Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="LastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH6p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH655XEeeC4rjDidDBug" comment="" key="false" length="-1" name="City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH7J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH7Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH7p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH755XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH8J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH8Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH8p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH855XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH9J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH9Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH9p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH955XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH-J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH-Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH-p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Physician_phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH-55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH_J5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH_Z5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_City" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH_p5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilH_55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilIAJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilIAZ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Provider_Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilIAp5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="EmailId_1" nullable="true" originalDbColumnName="EmailId" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cilIA55XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_ciuOkJ5XEeeC4rjDidDBug" comment="" key="false" length="-1" name="Goal_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_ciuOkZ5XEeeC4rjDidDBug" componentName="tS3Configuration" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="32">
+    <elementParameter xmi:id="_ciuOkp5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tS3Configuration_1" show="false"/>
+    <elementParameter xmi:id="_ciuOk55XEeeC4rjDidDBug" field="HADOOP_LIBRARIES" name="SPARKBATCH" value="" show="false"/>
+    <elementParameter xmi:id="_ciuOlJ5XEeeC4rjDidDBug" field="TEXT" name="ACCESS_KEY" value="context.S3_Access_Key"/>
+    <elementParameter xmi:id="_ciuOlZ5XEeeC4rjDidDBug" field="PASSWORD" name="SECRET_KEY" value="8pW6Nmy2kudBziHdbteVLmsI2tBuxojG"/>
+    <elementParameter xmi:id="_ciuOlp5XEeeC4rjDidDBug" field="TEXT" name="BUCKET_NAME" value="context.S3_Target_Bucket"/>
+    <elementParameter xmi:id="_ciuOl55XEeeC4rjDidDBug" field="TEXT" name="TEMP_FOLDER" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_ciuOmJ5XEeeC4rjDidDBug" field="CHECK" name="USE_S3A" value="true"/>
+    <elementParameter xmi:id="_ciuOmZ5XEeeC4rjDidDBug" field="CHECK" name="SET_REGION" value="false"/>
+    <elementParameter xmi:id="_ciuOmp5XEeeC4rjDidDBug" field="CLOSED_LIST" name="REGION" value="&quot;s3-external-1.amazonaws.com&quot;" show="false"/>
+    <elementParameter xmi:id="_ciuOm55XEeeC4rjDidDBug" field="CHECK" name="SET_ENDPOINT" value="false"/>
+    <elementParameter xmi:id="_ciuOnJ5XEeeC4rjDidDBug" field="TEXT" name="ENDPOINT" value="&quot;s3.eu-central-1.amazonaws.com&quot;" show="false"/>
+    <elementParameter xmi:id="_ciuOnZ5XEeeC4rjDidDBug" field="TEXT" name="STORAGE_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_ciuOnp5XEeeC4rjDidDBug" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_ciuOn55XEeeC4rjDidDBug" connectorName="FLOW" label="row1" lineStyle="0" metaname="tHiveInput_2" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_2" target="tMap_2">
+    <elementParameter xmi:id="_ciuOoJ5XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuOoZ5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuOop5XEeeC4rjDidDBug" connectorName="FLOW" label="outmap" lineStyle="0" metaname="outmap" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_1">
+    <elementParameter xmi:id="_ciuOo55XEeeC4rjDidDBug" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_ciuOpJ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Goal"/>
+      <elementValue xmi:id="_ciuOpZ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOpp5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuOp55XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Goal_Status"/>
+      <elementValue xmi:id="_ciuOqJ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOqZ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_ciuOqp5XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuOq55XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="outmap" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuOrJ5XEeeC4rjDidDBug" connectorName="FLOW" label="row2" lineStyle="8" metaname="tHiveInput_1" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_1" target="tMap_2">
+    <elementParameter xmi:id="_ciuOrZ5XEeeC4rjDidDBug" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_ciuOrp5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Age"/>
+      <elementValue xmi:id="_ciuOr55XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOsJ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_ciuOsZ5XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuOsp5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuOs55XEeeC4rjDidDBug" connectorName="FLOW" label="outfinal" lineStyle="0" metaname="outfinal" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_3">
+    <elementParameter xmi:id="_ciuOtJ5XEeeC4rjDidDBug" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_ciuOtZ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Goal"/>
+      <elementValue xmi:id="_ciuOtp5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOt55XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuOuJ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Goal_Status"/>
+      <elementValue xmi:id="_ciuOuZ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOup5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_ciuOu55XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuOvJ5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="outfinal" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuOvZ5XEeeC4rjDidDBug" connectorName="FLOW" label="row4" lineStyle="8" metaname="tHiveInput_4" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_4" target="tMap_1">
+    <elementParameter xmi:id="_ciuOvp5XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuOv55XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuOwJ5XEeeC4rjDidDBug" connectorName="FLOW" label="Final_Map" lineStyle="0" metaname="Final_Map" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tReplicate_1">
+    <elementParameter xmi:id="_ciuOwZ5XEeeC4rjDidDBug" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_ciuOwp5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Goal"/>
+      <elementValue xmi:id="_ciuOw55XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOxJ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuOxZ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Goal_Status"/>
+      <elementValue xmi:id="_ciuOxp5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOx55XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuOyJ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Physician_State"/>
+      <elementValue xmi:id="_ciuOyZ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOyp5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuOy55XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Physician_Zip"/>
+      <elementValue xmi:id="_ciuOzJ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuOzZ5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuOzp5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Physician_Country"/>
+      <elementValue xmi:id="_ciuOz55XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO0J5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO0Z5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Provider_State"/>
+      <elementValue xmi:id="_ciuO0p5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO055XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO1J5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Provider_Zip"/>
+      <elementValue xmi:id="_ciuO1Z5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO1p5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO155XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Provider_Country"/>
+      <elementValue xmi:id="_ciuO2J5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO2Z5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO2p5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Physician_Address"/>
+      <elementValue xmi:id="_ciuO255XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO3J5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO3Z5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Provider_Address"/>
+      <elementValue xmi:id="_ciuO3p5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO355XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO4J5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Provider_City"/>
+      <elementValue xmi:id="_ciuO4Z5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO4p5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO455XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Physician_City"/>
+      <elementValue xmi:id="_ciuO5J5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO5Z5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_ciuO5p5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN" value="Provider_name"/>
+      <elementValue xmi:id="_ciuO555XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_ciuO6J5XEeeC4rjDidDBug" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_ciuO6Z5XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuO6p5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="Final_Map" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuO655XEeeC4rjDidDBug" connectorName="FLOW" label="row3" lineStyle="8" metaname="tHiveInput_3" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_3" target="tMap_3">
+    <elementParameter xmi:id="_ciuO7J5XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuO7Z5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuO7p5XEeeC4rjDidDBug" connectorName="FLOW" label="row7" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tFileOutputDelimited_1">
+    <elementParameter xmi:id="_ciuO755XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuO8J5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection xmi:id="_ciuO8Z5XEeeC4rjDidDBug" connectorName="FLOW" label="row8" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tFileOutputDelimited_2">
+    <elementParameter xmi:id="_ciuO8p5XEeeC4rjDidDBug" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_ciuO855XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <subjob xmi:id="_ciuO9J5XEeeC4rjDidDBug">
+    <elementParameter xmi:id="_ciuO9Z5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_ciuO9p5XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_ciuO955XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_ciuO-J5XEeeC4rjDidDBug">
+    <elementParameter xmi:id="_ciuO-Z5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_ciuO-p5XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_ciuO-55XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_ciuO_J5XEeeC4rjDidDBug">
+    <elementParameter xmi:id="_ciuO_Z5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_2" show="false"/>
+    <elementParameter xmi:id="_ciuO_p5XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_ciuO_55XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_ciuPAJ5XEeeC4rjDidDBug">
+    <elementParameter xmi:id="_ciuPAZ5XEeeC4rjDidDBug" field="TEXT" name="UNIQUE_NAME" value="tS3Configuration_1" show="false"/>
+    <elementParameter xmi:id="_ciuPAp5XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_ciuPA55XEeeC4rjDidDBug" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
