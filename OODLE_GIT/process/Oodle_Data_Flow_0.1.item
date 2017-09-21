@@ -19,11 +19,11 @@
     <contextParameter comment="" name="Hive_Port" prompt="Hive_Port?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="10000"/>
     <contextParameter comment="" name="Hive_Server" prompt="Hive_Server?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="ec2-34-231-110-244.compute-1.amazonaws.com"/>
     <contextParameter comment="" name="Hive_Username" prompt="Hive_Username?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="hadoop"/>
-    <contextParameter comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/hadoop/oodle/param/config_param.txt"/>
+    <contextParameter comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/config_param.txt"/>
     <contextParameter comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/DailyFeeds/"/>
     <contextParameter comment="" name="HDFS_Stg_Output_Path" prompt="HDFS_Stg_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/tmp/"/>
     <contextParameter comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodlle/"/>
-    <contextParameter comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/hadoop/oodle/param/input_data.txt"/>
+    <contextParameter comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/input_data.txt"/>
     <contextParameter comment="" name="S3_File_Name" prompt="S3_File_Name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Hive_Table_Name" prompt="Hive_Table_Name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Hive_Table_Schema" prompt="Hive_Table_Schema?" promptNeeded="false" type="id_String" value=""/>
@@ -85,7 +85,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend Data Fabric 6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;F:/Talend/aws_wrkspce/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
