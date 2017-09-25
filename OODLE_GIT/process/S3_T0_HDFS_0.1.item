@@ -1393,7 +1393,7 @@
     <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/home/ec2-user&quot;"/>
     <elementParameter field="DIRECTORY_HADOOP" name="REMOTEDIR" value="context.HDFS_Tgt_Output_Path"/>
-    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
     <elementParameter field="TABLE" name="FILES">
       <elementValue elementRef="FILEMASK" value="context.S3_File_Name"/>
