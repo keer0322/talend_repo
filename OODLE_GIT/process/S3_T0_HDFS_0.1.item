@@ -21,11 +21,11 @@
     <contextParameter comment="" name="Hive_Server" prompt="Hive_Server?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="ec2-34-231-110-244.compute-1.amazonaws.com"/>
     <contextParameter comment="" name="Hive_Username" prompt="Hive_Username?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="hadoop"/>
     <contextParameter comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/config_param.txt"/>
-    <contextParameter comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/DailyFeeds/"/>
-    <contextParameter comment="" name="HDFS_Stg_Output_Path" prompt="HDFS_Stg_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/tmp/"/>
-    <contextParameter comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodlle/"/>
+    <contextParameter comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="HDFS_Stg_Output_Path" prompt="HDFS_Stg_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/input_data.txt"/>
-    <contextParameter comment="" name="JsonSerDeJarPath" prompt="JsonSerDeJarPath?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/hadoop/oodle/jar/json-serde-1.3.7-jar-with-dependencies.jar"/>
+    <contextParameter comment="" name="JsonSerDeJarPath" prompt="JsonSerDeJarPath?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="S3_File_Name" prompt="S3_File_Name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Hive_Table_Name" prompt="Hive_Table_Name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Hive_Table_Schema" prompt="Hive_Table_Schema?" promptNeeded="false" type="id_String" value=""/>
