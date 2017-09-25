@@ -430,7 +430,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Call Spark job for data processing"/>
