@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="S3_Access_Key" prompt="S3_Access_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value="AKIAIN3EDR4UIF2VLHIA"/>
-    <contextParameter comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_Password" value="vG6qb1/8ILwDyzvFDcONZYeRt+xtmA7LEyVhIiDBU3XmPwhiC7wQyhvPd+gown0k"/>
-    <contextParameter comment="" name="S3_Source_Bucket" prompt="S3_Source_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value="oodle-raw"/>
+    <contextParameter comment="" name="S3_Access_Key" prompt="S3_Access_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
+    <contextParameter comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_Password" value=""/>
+    <contextParameter comment="" name="S3_Source_Bucket" prompt="S3_Source_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
     <contextParameter comment="" name="S3_Source_Folder_Name" prompt="S3_Source_Folder_Name?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
-    <contextParameter comment="" name="S3_Target_Bucket" prompt="S3_Target_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value="oodle-harmonized"/>
+    <contextParameter comment="" name="S3_Target_Bucket" prompt="S3_Target_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
     <contextParameter comment="" name="S3_Target_Folder_Name" prompt="S3_Target_Folder_Name?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
-    <contextParameter comment="" name="Hadoop_JobHistory" prompt="Hadoop_JobHistory?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8030"/>
-    <contextParameter comment="" name="Hadoop_ResourceManager" prompt="Hadoop_ResourceManager?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8032"/>
-    <contextParameter comment="" name="Hadoop_ResourceManagerScheduler" prompt="Hadoop_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8030"/>
-    <contextParameter comment="" name="Hadoop_STG_DIR" prompt="Hadoop_STG_DIR?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="/user"/>
-    <contextParameter comment="" name="Hadoop_URI" prompt="Hadoop_URI?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="hdfs://ec2-34-204-176-3.compute-1.amazonaws.com:8020"/>
-    <contextParameter comment="" name="Hadoop_username" prompt="Hadoop_username?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value="hadoop"/>
+    <contextParameter comment="" name="Hadoop_JobHistory" prompt="Hadoop_JobHistory?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="Hadoop_ResourceManager" prompt="Hadoop_ResourceManager?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="Hadoop_ResourceManagerScheduler" prompt="Hadoop_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="Hadoop_STG_DIR" prompt="Hadoop_STG_DIR?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="Hadoop_URI" prompt="Hadoop_URI?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="Hadoop_username" prompt="Hadoop_username?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="Hive_AdditionalJDBCParameters" prompt="Hive_AdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
-    <contextParameter comment="" name="Hive_Database" prompt="Hive_Database?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="oodle"/>
+    <contextParameter comment="" name="Hive_Database" prompt="Hive_Database?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
     <contextParameter comment="" name="Hive_Password" prompt="Hive_Password?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_Password" value=""/>
-    <contextParameter comment="" name="Hive_Port" prompt="Hive_Port?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="10000"/>
-    <contextParameter comment="" name="Hive_Server" prompt="Hive_Server?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="ec2-34-231-110-244.compute-1.amazonaws.com"/>
-    <contextParameter comment="" name="Hive_Username" prompt="Hive_Username?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value="hadoop"/>
+    <contextParameter comment="" name="Hive_Port" prompt="Hive_Port?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Hive_Server" prompt="Hive_Server?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Hive_Username" prompt="Hive_Username?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
     <contextParameter comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/config_param.txt"/>
-    <contextParameter comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/DailyFeeds/"/>
-    <contextParameter comment="" name="HDFS_Stg_Output_Path" prompt="HDFS_Stg_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodle/tmp/"/>
-    <contextParameter comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/user/hadoop/oodlle/"/>
+    <contextParameter comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="HDFS_Stg_Output_Path" prompt="HDFS_Stg_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/input_data.txt"/>
     <contextParameter comment="" name="S3_File_Name" prompt="S3_File_Name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Hive_Table_Name" prompt="Hive_Table_Name?" promptNeeded="false" type="id_String" value=""/>
