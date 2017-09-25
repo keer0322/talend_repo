@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_xyvGwJ7fEeeE5por0IoA7Q" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_xyvGwZ7fEeeE5por0IoA7Q" comment="" name="Hadoop_URI" prompt="Hadoop_URI?" promptNeeded="false" type="id_String" value="hdfs://ec2-34-204-176-3.compute-1.amazonaws.com:8020"/>
-  <contextParameter xmi:id="_xyvGwp7fEeeE5por0IoA7Q" comment="" name="Hadoop_ResourceManager" prompt="Hadoop_ResourceManager?" promptNeeded="false" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8032"/>
-  <contextParameter xmi:id="_xyvt0J7fEeeE5por0IoA7Q" comment="" name="Hadoop_ResourceManagerScheduler" prompt="Hadoop_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8030"/>
-  <contextParameter xmi:id="_xyvt0Z7fEeeE5por0IoA7Q" comment="" name="Hadoop_JobHistory" prompt="Hadoop_JobHistory?" promptNeeded="false" type="id_String" value="ec2-34-204-176-3.compute-1.amazonaws.com:8030"/>
-  <contextParameter xmi:id="_xyvt0p7fEeeE5por0IoA7Q" comment="" name="Hadoop_username" prompt="Hadoop_username?" promptNeeded="false" type="id_String" value="hadoop"/>
-  <contextParameter xmi:id="_xyvt057fEeeE5por0IoA7Q" comment="" name="Hadoop_STG_DIR" prompt="Hadoop_STG_DIR?" promptNeeded="false" type="id_String" value="/user"/>
+  <contextParameter xmi:id="_xyvGwZ7fEeeE5por0IoA7Q" comment="" name="Hadoop_URI" prompt="Hadoop_URI?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xyvGwp7fEeeE5por0IoA7Q" comment="" name="Hadoop_ResourceManager" prompt="Hadoop_ResourceManager?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xyvt0J7fEeeE5por0IoA7Q" comment="" name="Hadoop_ResourceManagerScheduler" prompt="Hadoop_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xyvt0Z7fEeeE5por0IoA7Q" comment="" name="Hadoop_JobHistory" prompt="Hadoop_JobHistory?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xyvt0p7fEeeE5por0IoA7Q" comment="" name="Hadoop_username" prompt="Hadoop_username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xyvt057fEeeE5por0IoA7Q" comment="" name="Hadoop_STG_DIR" prompt="Hadoop_STG_DIR?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
