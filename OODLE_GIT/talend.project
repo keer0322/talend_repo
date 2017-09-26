@@ -160,6 +160,7 @@
       <relatedItems xmi:id="_oXNd9qIIEeewh9d2QGnGHQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_oXNd96IIEeewh9d2QGnGHQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_oXNd-KIIEeewh9d2QGnGHQ" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0J6JEKJ6Eee2eumRGMQQBw" id="_7_FyEKJ5Eee2eumRGMQQBw" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_k3QYoKIdEeewh9d2QGnGHQ">
       <baseItem xmi:id="_k3QYoaIdEeewh9d2QGnGHQ" id="_a6cKMKIdEeewh9d2QGnGHQ" version="0.1" type="job"/>
