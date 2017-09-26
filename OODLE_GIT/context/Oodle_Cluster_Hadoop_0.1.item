@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_aLKcAKJiEee2eumRGMQQBw" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_aLKcAaJiEee2eumRGMQQBw" comment="" name="Hadoop_URI" prompt="Hadoop_URI?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_aLKcAqJiEee2eumRGMQQBw" comment="" name="Hadoop_ResourceManager" prompt="Hadoop_ResourceManager?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_aLKcA6JiEee2eumRGMQQBw" comment="" name="Hadoop_ResourceManagerScheduler" prompt="Hadoop_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_aLKcBKJiEee2eumRGMQQBw" comment="" name="Hadoop_JobHistory" prompt="Hadoop_JobHistory?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_aLKcBaJiEee2eumRGMQQBw" comment="" name="Hadoop_username" prompt="Hadoop_username?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_aLKcBqJiEee2eumRGMQQBw" comment="" name="Hadoop_STG_DIR" prompt="Hadoop_STG_DIR?" promptNeeded="false" type="id_String" value=""/>
-</talendfile:ContextType>
