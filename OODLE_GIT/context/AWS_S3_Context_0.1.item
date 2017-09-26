@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Z0N7oKJiEee2eumRGMQQBw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Z0N7oaJiEee2eumRGMQQBw" comment="" name="S3_Access_Key" prompt="S3_Access_Key?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Z0N7oqJiEee2eumRGMQQBw" comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_Z0N7o6JiEee2eumRGMQQBw" comment="" name="S3_Target_Bucket" prompt="S3_Target_Bucket?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Z0N7pKJiEee2eumRGMQQBw" comment="" name="S3_Source_Bucket" prompt="S3_Source_Bucket?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Z0N7paJiEee2eumRGMQQBw" comment="" name="S3_Source_Folder_Name" prompt="S3_Source_Folder_Name?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Z0N7pqJiEee2eumRGMQQBw" comment="" name="S3_Target_Folder_Name" prompt="S3_Target_Folder_Name?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
