@@ -3,7 +3,7 @@ package routines;
 import org.antlr.runtime.*;
 import org.talend.dataquality.parser.util.GrammarEngine;
 
-public class Importtweets_deployTstandardizerow_1 extends GrammarEngine {
+public class ImporttweetsTstandardizerow_1 extends GrammarEngine {
 
     @Override
     protected void executeParserRule(TokenStream tokenStream) throws RecognitionException {
@@ -2778,33 +2778,33 @@ static class CombinedParser extends Parser {
 	// $ANTLR end "words"
 
 	// Delegated rules
-	public void extended() throws RecognitionException { gBasicParser.extended(); }
-
-	public Combined_BasicParser.cjk_return cjk() throws RecognitionException { return gBasicParser.cjk(); }
-
-	public Combined_BasicParser.capword_return capword() throws RecognitionException { return gBasicParser.capword(); }
-
-	public Combined_BasicParser.currency_return currency() throws RecognitionException { return gBasicParser.currency(); }
-
 	public Combined_BasicParser.word_return word() throws RecognitionException { return gBasicParser.word(); }
-
-	public void basic() throws RecognitionException { gBasicParser.basic(); }
 
 	public Combined_BasicParser.undefined_return undefined() throws RecognitionException { return gBasicParser.undefined(); }
 
-	public Combined_BasicParser.fraction_return fraction() throws RecognitionException { return gBasicParser.fraction(); }
-
 	public Combined_BasicParser.email_return email() throws RecognitionException { return gBasicParser.email(); }
 
-	public void separator() throws RecognitionException { gBasicParser.separator(); }
+	public Combined_BasicParser.capword_return capword() throws RecognitionException { return gBasicParser.capword(); }
 
-	public Combined_BasicParser.integer_return integer() throws RecognitionException { return gBasicParser.integer(); }
+	public void extended() throws RecognitionException { gBasicParser.extended(); }
+
+	public void basic() throws RecognitionException { gBasicParser.basic(); }
+
+	public Combined_BasicParser.currency_return currency() throws RecognitionException { return gBasicParser.currency(); }
 
 	public Combined_BasicParser.alphanum_return alphanum() throws RecognitionException { return gBasicParser.alphanum(); }
 
 	public Combined_BasicParser.roman_numeral_return roman_numeral() throws RecognitionException { return gBasicParser.roman_numeral(); }
 
+	public Combined_BasicParser.fraction_return fraction() throws RecognitionException { return gBasicParser.fraction(); }
+
+	public Combined_BasicParser.cjk_return cjk() throws RecognitionException { return gBasicParser.cjk(); }
+
+	public void separator() throws RecognitionException { gBasicParser.separator(); }
+
 	public Combined_BasicParser.decimal_return decimal() throws RecognitionException { return gBasicParser.decimal(); }
+
+	public Combined_BasicParser.integer_return integer() throws RecognitionException { return gBasicParser.integer(); }
 
 
 
