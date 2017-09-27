@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GeLCEKJkEee2eumRGMQQBw" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_GeLCEaJkEee2eumRGMQQBw" comment="" name="HDFS_Stg_Output_Path" prompt="HDFS_Stg_Output_Path?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GeLCEqJkEee2eumRGMQQBw" comment="" name="HDFS_Tgt_Output_Path" prompt="HDFS_Tgt_Output_Path?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GeLCE6JkEee2eumRGMQQBw" comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_GeLCFKJkEee2eumRGMQQBw" comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" type="id_String" value="/home/ec2-user/input_data.txt"/>
-  <contextParameter xmi:id="_GeLCFaJkEee2eumRGMQQBw" comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" type="id_String" value="/home/ec2-user/config_param.txt"/>
-  <contextParameter xmi:id="_GeLCFqJkEee2eumRGMQQBw" comment="" name="JsonSerDeJarPath" prompt="JsonSerDeJarPath?" promptNeeded="false" type="id_String" value=""/>
-</talendfile:ContextType>
