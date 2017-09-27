@@ -88,7 +88,6 @@
       <relatedItems xmi:id="_x6sI_Z7fEeeE5por0IoA7Q" id="_Ihes4J2eEeepddv4c48Ucw" version="Latest" type="context"/>
       <relatedItems xmi:id="_x6sI_p7fEeeE5por0IoA7Q" id="_XElGYJEbEee8WO8wvmXhvw" version="Latest" type="context"/>
       <relatedItems xmi:id="_x6sI_57fEeeE5por0IoA7Q" id="_eJ_tcJ2eEeepddv4c48Ucw" version="Latest" type="context"/>
-      <relatedItems xmi:id="_x6sJAJ7fEeeE5por0IoA7Q" id="_zOshYJtQEeeaF4KtOHYPVg" version="Latest" type="property"/>
       <relatedItems xmi:id="_x6sJAZ7fEeeE5por0IoA7Q" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_x6sJAp7fEeeE5por0IoA7Q" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_x6sJA57fEeeE5por0IoA7Q" id="TalendString" version="Latest" type="routine"/>
@@ -107,6 +106,7 @@
       <relatedItems xmi:id="_x6sv8Z7fEeeE5por0IoA7Q" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_x6sv8p7fEeeE5por0IoA7Q" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_x6sv857fEeeE5por0IoA7Q" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_hG-EkKMzEeet6YH06skt2A" id="_e-XsQKMmEeeJLJILu0UrZw - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_oXNd4KIIEeewh9d2QGnGHQ">
       <baseItem xmi:id="_oXNd4aIIEeewh9d2QGnGHQ" id="_oWUtEKIIEeewh9d2QGnGHQ" version="0.1" type="job"/>
