@@ -52,8 +52,8 @@
     <parameters xmi:id="_r73JkqJ6Eee2eumRGMQQBw" key="HIVE_EXECUTION_ENGINE"/>
     <parameters xmi:id="_r73Jk6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
     <parameters xmi:id="_r73JlKJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_HIVE_ADDITIONAL_JDBC_SETTINGS" value=""/>
-    <parameters xmi:id="_zDP8kKM2Eeet6YH06skt2A" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
-    <parameters xmi:id="_zDP8kaM2Eeet6YH06skt2A" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+    <parameters xmi:id="_w6JooKNjEee8fsIC2s4fqw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+    <parameters xmi:id="_w6JooaNjEee8fsIC2s4fqw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_rk1gUKLgEees8enMvX5q-w" name="oodle" dataManager="_r717cKJ6Eee2eumRGMQQBw"/>
 </xmi:XMI>
