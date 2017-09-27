@@ -306,7 +306,6 @@
     <ItemsRelations xmi:id="_u60I8KN1EeeB_5YJcq3gRw">
       <baseItem xmi:id="_u60I8aN1EeeB_5YJcq3gRw" id="_c5J6UKN1EeeB_5YJcq3gRw" version="0.1" type="job"/>
       <relatedItems xmi:id="_u60I8qN1EeeB_5YJcq3gRw" id="_7_FyEKJ5Eee2eumRGMQQBw" version="Latest" type="property"/>
-      <relatedItems xmi:id="_u60I86N1EeeB_5YJcq3gRw" id="_zOshYJtQEeeaF4KtOHYPVg" version="Latest" type="property"/>
       <relatedItems xmi:id="_u60I9KN1EeeB_5YJcq3gRw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_u60I9aN1EeeB_5YJcq3gRw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_u60I9qN1EeeB_5YJcq3gRw" id="TalendString" version="Latest" type="routine"/>
