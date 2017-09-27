@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_r717cKJ6Eee2eumRGMQQBw" name="hive_emr" id="_7_FyEKJ5Eee2eumRGMQQBw" label="hive_emr" dataPackage="_rk1gUKLgEees8enMvX5q-w" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://ec2-34-235-130-143.compute-1.amazonaws.com:10000/oodle" dbVersionString="STANDALONE" Port="10000" Username="hadoop" Password="" ServerName="ec2-34-235-130-143.compute-1.amazonaws.com" SID="oodle" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="HIVE" StandardSQL="true" UiSchema="oodle">
+  <TalendMetadata:DatabaseConnection xmi:id="_r717cKJ6Eee2eumRGMQQBw" name="hive_emr" id="_7_FyEKJ5Eee2eumRGMQQBw" label="hive_emr" dataPackage="_rk1gUKLgEees8enMvX5q-w" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://ec2-34-207-59-160.compute-1.amazonaws.com:10000/oodle" dbVersionString="STANDALONE" Port="10000" Username="hadoop" Password="" ServerName="ec2-34-207-59-160.compute-1.amazonaws.com" SID="oodle" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="HIVE" StandardSQL="true" UiSchema="oodle">
     <taggedValue xmi:id="_r72igKJ6Eee2eumRGMQQBw" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_sGBLIKJ6Eee2eumRGMQQBw" tag="package filter" value=""/>
     <taggedValue xmi:id="_sGhhcKJ6Eee2eumRGMQQBw" tag="Status" value=""/>
@@ -52,8 +52,8 @@
     <parameters xmi:id="_r73JkqJ6Eee2eumRGMQQBw" key="HIVE_EXECUTION_ENGINE"/>
     <parameters xmi:id="_r73Jk6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
     <parameters xmi:id="_r73JlKJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_HIVE_ADDITIONAL_JDBC_SETTINGS" value=""/>
-    <parameters xmi:id="_mLMiIKLgEees8enMvX5q-w" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
-    <parameters xmi:id="_mLMiIaLgEees8enMvX5q-w" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+    <parameters xmi:id="_zDP8kKM2Eeet6YH06skt2A" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+    <parameters xmi:id="_zDP8kaM2Eeet6YH06skt2A" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_rk1gUKLgEees8enMvX5q-w" name="oodle" dataManager="_r717cKJ6Eee2eumRGMQQBw"/>
 </xmi:XMI>
