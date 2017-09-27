@@ -279,6 +279,7 @@
       <relatedItems xmi:id="_TjrM1qM1Eeet6YH06skt2A" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_TjrM16M1Eeet6YH06skt2A" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
       <relatedItems xmi:id="_TjrM2KM1Eeet6YH06skt2A" id="_e-XsQKMmEeeJLJILu0UrZw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_eMq50KM3Eeet6YH06skt2A" id="_7_FyEKJ5Eee2eumRGMQQBw" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_A-Ed8J7fEeeE5por0IoA7Q" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_A-FFAJ7fEeeE5por0IoA7Q" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
