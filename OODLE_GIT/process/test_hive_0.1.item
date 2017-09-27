@@ -125,7 +125,7 @@
     <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE"/>
     <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2"/>
-    <elementParameter field="TEXT" name="HOST" value="ec2-54-91-216-146.compute-1.amazonaws.com"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ec2-54-91-216-146.compute-1.amazonaws.com&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="HIVE" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="10000"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;oodle&quot;"/>
