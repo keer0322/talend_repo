@@ -345,7 +345,6 @@
       <relatedItems xmi:id="_bsWe4aQLEeemqPQFFFixvA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_bsWe4qQLEeemqPQFFFixvA" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_bsWe46QLEeemqPQFFFixvA" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_qX9-sKQLEeemqPQFFFixvA" id="_m5eekKQLEeemqPQFFFixvA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_h8Q1UKQZEeef0pllA0MMdA">
       <baseItem xmi:id="_h8Q1UaQZEeef0pllA0MMdA" id="_PZlkUKQZEeef0pllA0MMdA" version="0.1" type="job"/>
