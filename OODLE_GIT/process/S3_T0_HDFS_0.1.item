@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="Load_Type" prompt="Load_Type?" promptNeeded="false" type="id_String" value="CSV"/>
     <contextParameter comment="" name="S3_Access_Key" prompt="S3_Access_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
-    <contextParameter comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_Password" value=""/>
+    <contextParameter comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value="&quot;&quot;96Go/6CQlIZTy2fkWHwRuo8oTEfAAYb2vyZ688KT&quot;&quot;"/>
     <contextParameter comment="" name="S3_Source_Bucket" prompt="S3_Source_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
     <contextParameter comment="" name="S3_Source_Folder_Name" prompt="S3_Source_Folder_Name?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
     <contextParameter comment="" name="S3_Target_Bucket" prompt="S3_Target_Bucket?" promptNeeded="false" repositoryContextId="_XElGYJEbEee8WO8wvmXhvw" type="id_String" value=""/>
@@ -86,7 +86,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend Data Fabric 6.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;F:/Talend/aws_wrkspce/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
