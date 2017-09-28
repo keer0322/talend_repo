@@ -347,6 +347,27 @@
       <relatedItems xmi:id="_bsWe46QLEeemqPQFFFixvA" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
       <relatedItems xmi:id="_qX9-sKQLEeemqPQFFFixvA" id="_m5eekKQLEeemqPQFFFixvA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_h8Q1UKQZEeef0pllA0MMdA">
+      <baseItem xmi:id="_h8Q1UaQZEeef0pllA0MMdA" id="_PZlkUKQZEeef0pllA0MMdA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_h8Q1UqQZEeef0pllA0MMdA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1U6QZEeef0pllA0MMdA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1VKQZEeef0pllA0MMdA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1VaQZEeef0pllA0MMdA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1VqQZEeef0pllA0MMdA" id="ImporttweetsTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1V6QZEeef0pllA0MMdA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1WKQZEeef0pllA0MMdA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1WaQZEeef0pllA0MMdA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1WqQZEeef0pllA0MMdA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1W6QZEeef0pllA0MMdA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1XKQZEeef0pllA0MMdA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1XaQZEeef0pllA0MMdA" id="Tweets_Generator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1XqQZEeef0pllA0MMdA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1X6QZEeef0pllA0MMdA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1YKQZEeef0pllA0MMdA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1YaQZEeef0pllA0MMdA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1YqQZEeef0pllA0MMdA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h8Q1Y6QZEeef0pllA0MMdA" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_A-Ed8J7fEeeE5por0IoA7Q" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_A-FFAJ7fEeeE5por0IoA7Q" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_A-FFAZ7fEeeE5por0IoA7Q" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
