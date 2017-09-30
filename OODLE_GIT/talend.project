@@ -394,6 +394,7 @@
       <relatedItems xmi:id="_T8dRgaWsEeeq4N7O1Hhh2Q" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_T8dRgqWsEeeq4N7O1Hhh2Q" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_T8dRg6WsEeeq4N7O1Hhh2Q" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_5ldoMKWuEeeq4N7O1Hhh2Q" id="_zOshYJtQEeeaF4KtOHYPVg" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_A-Ed8J7fEeeE5por0IoA7Q" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_A-FFAJ7fEeeE5por0IoA7Q" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
