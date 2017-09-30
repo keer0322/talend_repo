@@ -1451,7 +1451,7 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Get_1" offsetLabelX="0" offsetLabelY="0" source="tS3Get_1" target="tHDFSPut_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSPut_1" offsetLabelX="2" offsetLabelY="28" source="tHDFSPut_1" target="tHiveRow_8">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSPut_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSPut_1" target="tHiveRow_8">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
   </connection>
   <note opaque="true" posX="160" posY="-64" sizeHeight="64" sizeWidth="417" text="Copy file from S3 to HDFS and create Hive table"/>
