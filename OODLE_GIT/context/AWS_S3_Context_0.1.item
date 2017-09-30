@@ -6,4 +6,5 @@
   <contextParameter xmi:id="_ec2ntKMzEeet6YH06skt2A" comment="" name="S3_Source_Bucket" prompt="S3_Source_Bucket?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_ec2ntaMzEeet6YH06skt2A" comment="" name="S3_Source_Folder_Name" prompt="S3_Source_Folder_Name?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_ec2ntqMzEeet6YH06skt2A" comment="" name="S3_Target_Folder_Name" prompt="S3_Target_Folder_Name?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="__xQdEKWjEeeq4N7O1Hhh2Q" comment="" name="S3_File_Name" prompt="S3_File_Name?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
