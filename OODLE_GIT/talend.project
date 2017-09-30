@@ -231,7 +231,6 @@
       <relatedItems xmi:id="_gW_ZN6MzEeet6YH06skt2A" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gW_ZOKMzEeet6YH06skt2A" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gW_ZOaMzEeet6YH06skt2A" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_PEy2kKW6Eeeq4N7O1Hhh2Q" id="_zOshYJtQEeeaF4KtOHYPVg" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_TjrMwKM1Eeet6YH06skt2A">
       <baseItem xmi:id="_TjrMwaM1Eeet6YH06skt2A" id="_TjIaMKM1Eeet6YH06skt2A" version="0.1" type="job"/>
