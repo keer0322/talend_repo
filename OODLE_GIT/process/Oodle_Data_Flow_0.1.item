@@ -392,7 +392,7 @@
     <elementParameter field="TEXT" name="SESSION_DURATION" value="15" show="false"/>
     <elementParameter field="OPENED_LIST" name="REGION" value="DEFAULT"/>
     <elementParameter field="CHECK" name="LISTALL" value="true"/>
-    <elementParameter field="TEXT" name="OBJECTS_PREFIX" value="&quot;oodle&quot;"/>
+    <elementParameter field="TEXT" name="OBJECTS_PREFIX" value="oodle"/>
     <elementParameter field="TABLE" name="BUCKETS" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
