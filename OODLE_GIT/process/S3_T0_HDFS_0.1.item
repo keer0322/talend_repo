@@ -792,7 +792,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later."/>
     <elementParameter field="CHECK" name="USE_PARQUET" value="false"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;LOAD DATA INPATH '&quot; + context.HDFS_Tgt_Output_Path + &quot;'  INTO TABLE &quot; + context.Hive_Database + &quot;.tmp_&quot; + context.Hive_Table_Name"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;LOAD DATA INPATH '&quot; + context.HDFS_Tgt_Output_Path + &quot;'  OVERWRITE INTO TABLE &quot; + context.Hive_Database + &quot;.tmp_&quot; + context.Hive_Table_Name"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="STORE_BY_HBASE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;localhost&quot;" show="false"/>
