@@ -1436,11 +1436,8 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveConnection_2" offsetLabelX="0" offsetLabelY="0" source="tHiveConnection_2" target="tHiveRow_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_2" target="tS3Get_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tS3Get_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_2" target="tHiveRow_8">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveRow_6" offsetLabelX="0" offsetLabelY="0" source="tHiveRow_6" target="tHiveRow_7">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
@@ -1453,6 +1450,9 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Get_1" offsetLabelX="0" offsetLabelY="0" source="tS3Get_1" target="tHDFSPut_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSPut_1" offsetLabelX="2" offsetLabelY="28" source="tHDFSPut_1" target="tHiveRow_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
   </connection>
   <note opaque="true" posX="160" posY="-64" sizeHeight="64" sizeWidth="417" text="Copy file from S3 to HDFS and create Hive table"/>
   <note opaque="true" posX="608" posY="320" sizeHeight="64" sizeWidth="257" text="Load JSON Data Files">
