@@ -406,7 +406,18 @@
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
     <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="Hive_Server"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.Hive_Server"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="Hadoop_URI"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.Hadoop_URI"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="Hadoop_username"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.Hadoop_username"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="Hadoop_ResourceManager"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.Hadoop_ResourceManager"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="Hadoop_ResourceManagerScheduler"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.Hadoop_ResourceManagerScheduler"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false" show="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
     <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
