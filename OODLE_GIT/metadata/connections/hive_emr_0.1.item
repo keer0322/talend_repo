@@ -13,18 +13,18 @@
     <taggedValue xmi:id="_sIeCMaJ6Eee2eumRGMQQBw" tag="DB ProductVersion" value="2.1.0-amzn-0"/>
     <parameters xmi:id="_r72igaJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_DB_PORT"/>
     <parameters xmi:id="_r72igqJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_USE_YARN" value="true"/>
-    <parameters xmi:id="_r72ig6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="ec2-34-228-63-130.compute-1.amazonaws.com:8030"/>
+    <parameters xmi:id="_r72ig6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="ec2-52-54-111-144.compute-1.amazonaws.com:8030"/>
     <parameters xmi:id="_r72ihKJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="false"/>
-    <parameters xmi:id="_r72ihaJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://ec2-34-228-63-130.compute-1.amazonaws.com:8020"/>
+    <parameters xmi:id="_r72ihaJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://ec2-52-54-111-144.compute-1.amazonaws.com:8020"/>
     <parameters xmi:id="_r72ihqJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_USERNAME" value="hadoop"/>
     <parameters xmi:id="_r72ih6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_lpYiQJtQEeeaF4KtOHYPVg"/>
     <parameters xmi:id="_r72iiKJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value=""/>
     <parameters xmi:id="_r72iiaJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_HBASE_VERSION" value="EMR_5_0_0"/>
-    <parameters xmi:id="_r72iiqJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="ec2-34-228-63-130.compute-1.amazonaws.com:8032"/>
-    <parameters xmi:id="_r72ii6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="ec2-34-228-63-130.compute-1.amazonaws.com:10020"/>
+    <parameters xmi:id="_r72iiqJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="ec2-52-54-111-144.compute-1.amazonaws.com:8032"/>
+    <parameters xmi:id="_r72ii6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="ec2-52-54-111-144.compute-1.amazonaws.com:10020"/>
     <parameters xmi:id="_r72ijKJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_HIVE_VERSION" value="EMR_5_0_0"/>
     <parameters xmi:id="_r72ijaJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
-    <parameters xmi:id="_r72ijqJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_DB_SERVER" value="ec2-34-228-63-130.compute-1.amazonaws.com"/>
+    <parameters xmi:id="_r72ijqJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_DB_SERVER" value="ec2-52-54-111-144.compute-1.amazonaws.com"/>
     <parameters xmi:id="_r72ij6J6Eee2eumRGMQQBw" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
     <parameters xmi:id="_r72ikKJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
     <parameters xmi:id="_r72ikaJ6Eee2eumRGMQQBw" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value=""/>
