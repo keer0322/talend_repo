@@ -493,7 +493,7 @@
     <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="true"/>
     <elementParameter field="CHECK" name="ASSUME_ROLE" value="true"/>
     <elementParameter field="TEXT" name="ARN" value="&quot;arn:aws:iam::140089806333:role/EC2S3access&quot;"/>
-    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" value="&quot;Oodle_Session_Test&quot;"/>
+    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" value="&quot;EC2S3access&quot;"/>
     <elementParameter field="TEXT" name="SESSION_DURATION" value="15"/>
     <elementParameter field="OPENED_LIST" name="REGION" value="DEFAULT"/>
     <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
