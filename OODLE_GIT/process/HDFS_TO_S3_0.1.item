@@ -160,6 +160,7 @@
     <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
     <elementParameter field="CHECK" name="SET_STS_ENDPOINT" value="false" show="false"/>
     <elementParameter field="TEXT" name="STS_ENDPOINT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="S3_IAM_Connection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tHDFSGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
