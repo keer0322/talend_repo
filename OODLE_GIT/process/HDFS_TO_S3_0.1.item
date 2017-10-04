@@ -259,7 +259,7 @@
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="BUCKET" value="context.S3_Target_Bucket"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;oodle&quot;"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;FinalDailyFeed.txt&quot;"/>
     <elementParameter field="FILE" name="FILE" value=" &quot;/home/ec2-user/FinalDailyFeed.txt&quot;"/>
     <elementParameter field="CHECK" name="ENABLE-SERVER-SIDE-ENCRYPTION" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
