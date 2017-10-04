@@ -1362,7 +1362,7 @@
     <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="BUCKET" value="context.S3_Source_Bucket"/>
+    <elementParameter field="TEXT" name="BUCKET" value="context.TalendSource"/>
     <elementParameter field="TEXT" name="KEY" value="context.S3_File_Name"/>
     <elementParameter field="FILE" name="FILE" value="context.Hadoop_homedir + &quot;/&quot;+context.S3_File_Name"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
