@@ -141,7 +141,7 @@
     <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAIDR3JKGSVMZQ7C6A&quot;"/>
     <elementParameter field="PASSWORD" name="SECRET_KEY" value="Kvfs/DHf+QqIm+XRxjyr3p1bWlQRoZsS3r0rxNAxYMvBFH1rB1oZCRDZFvIxAoT3"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;oodle-harmonized&quot;"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;redshift_load_test_data.txt&quot;"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;FinalDailyFeed.txt&quot;"/>
     <elementParameter field="TEXT" name="ACCESS_KEY_EMR" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="SECRET_KEY_EMR" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="TEXT" name="EMR_CLUSTER_ID" value="&quot;&quot;" show="false"/>
