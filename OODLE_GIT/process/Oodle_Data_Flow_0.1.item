@@ -398,8 +398,6 @@
     <elementParameter field="TEXT" name="OBJECTS_PREFIX" value="&quot;oodle&quot;" show="false"/>
     <elementParameter field="TABLE" name="BUCKETS">
       <elementValue elementRef="BUCKET_NAME" value="&quot;oodle-raw&quot;"/>
-      <elementValue elementRef="OBJECT_PREFIX" value="&quot;oodle&quot;"/>
-      <elementValue elementRef="BUCKET_NAME" value="&quot;oodle-raw&quot;"/>
       <elementValue elementRef="OBJECT_PREFIX" value="&quot;json&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
