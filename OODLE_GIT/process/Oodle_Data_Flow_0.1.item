@@ -399,6 +399,8 @@
     <elementParameter field="TABLE" name="BUCKETS">
       <elementValue elementRef="BUCKET_NAME" value="&quot;oodle-raw&quot;"/>
       <elementValue elementRef="OBJECT_PREFIX" value="&quot;json&quot;"/>
+      <elementValue elementRef="BUCKET_NAME" value="&quot;oodle-raw&quot;"/>
+      <elementValue elementRef="OBJECT_PREFIX" value="&quot;oodle&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false" show="false"/>
