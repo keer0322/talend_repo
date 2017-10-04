@@ -319,6 +319,7 @@
   </node>
   <node componentName="tS3Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="SECRET_KEY" value="0RMsyjmybrE="/>
     <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false"/>
