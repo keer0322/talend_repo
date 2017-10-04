@@ -232,7 +232,7 @@
     <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="BUCKET" value="context.S3_Target_Bucket"/>
+    <elementParameter field="TEXT" name="BUCKET" value="context.TalendTarget"/>
     <elementParameter field="TEXT" name="KEY" value="&quot;FinalDailyFeed.txt&quot;"/>
     <elementParameter field="FILE" name="FILE" value="context.Hadoop_homedir +&quot;/FinalDailyFeed.txt&quot;"/>
     <elementParameter field="CHECK" name="ENABLE-SERVER-SIDE-ENCRYPTION" value="false"/>
