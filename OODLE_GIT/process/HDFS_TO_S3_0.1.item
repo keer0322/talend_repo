@@ -14,6 +14,12 @@
     <contextParameter comment="" name="Hadoop_STG_DIR" prompt="Hadoop_STG_DIR?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="Hadoop_URI" prompt="Hadoop_URI?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="Hadoop_username" prompt="Hadoop_username?" promptNeeded="false" repositoryContextId="_Ihes4J2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="Hive_AdditionalJDBCParameters" prompt="Hive_AdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Hive_Database" prompt="Hive_Database?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Hive_Password" prompt="Hive_Password?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="Hive_Port" prompt="Hive_Port?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Hive_Server" prompt="Hive_Server?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Hive_Username" prompt="Hive_Username?" promptNeeded="false" repositoryContextId="_xF2QYJwSEeevSfDK6QoZaQ" type="id_String" value=""/>
     <contextParameter comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/oodle_config.txt"/>
     <contextParameter comment="" name="Hadoop_homedir" prompt="Hadoop_homedir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="HDFS_OutputDailyFeedDir" prompt="HDFS_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
