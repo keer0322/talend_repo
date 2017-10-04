@@ -242,7 +242,7 @@
     <elementParameter field="CHECK" name="SET_STS_ENDPOINT" value="false" show="false"/>
     <elementParameter field="TEXT" name="STS_ENDPOINT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="PART_SIZE" value="5"/>
-    <elementParameter field="TEXT" name="LABEL" value="Get local_to_S3"/>
+    <elementParameter field="TEXT" name="LABEL" value="Write to S3"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-32">
