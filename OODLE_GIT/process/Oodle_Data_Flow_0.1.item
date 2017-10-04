@@ -31,6 +31,10 @@
     <contextParameter comment="" name="HDFS_tmp_OutputDailyFeedDir" prompt="HDFS_tmp_OutputDailyFeedDir?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
     <contextParameter comment="" name="InputParamFileName" prompt="InputParamFileName?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/oodle_input_data.txt"/>
     <contextParameter comment="" name="JsonSerDeJarPath" prompt="JsonSerDeJarPath?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value=""/>
+    <contextParameter comment="" name="oodle_s3_properties" prompt="oodle_s3_properties?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/oodle-s3.properties"/>
+    <contextParameter comment="" name="oodle_redshift_properties" prompt="oodle_redshift_properties?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/oodle-redshift.properties"/>
+    <contextParameter comment="" name="oodle_emr_properties" prompt="oodle_emr_properties?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/oodle-emr.properties"/>
+    <contextParameter comment="" name="oodle_job_properties" prompt="oodle_job_properties?" promptNeeded="false" repositoryContextId="_eJ_tcJ2eEeepddv4c48Ucw" type="id_String" value="/home/ec2-user/oodle-job.properties"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
@@ -891,7 +895,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
