@@ -314,7 +314,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later."/>
     <elementParameter field="CHECK" name="USE_PARQUET" value="false"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE TABLE IF NOT EXISTS &quot; + context.Hive_Database + &quot;.&quot; + context.Hive_Table_Name + &quot;(&quot; + context.Hive_Table_Schema + &quot;)&quot; + &quot; row format delimited fields terminated by ','  tblproperties ('skip.header.line.count'='1')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DROP TABLE IF EXISTS &quot; + context.Hive_Database + &quot;.&quot; + context.Hive_Table_Name + &quot;;&#xD;&#xA;CREATE TABLE IF NOT EXISTS &quot; + context.Hive_Database + &quot;.&quot; + context.Hive_Table_Name + &quot;(&quot; + context.Hive_Table_Schema + &quot;)&quot; + &quot; row format delimited fields terminated by ','  tblproperties ('skip.header.line.count'='1')&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="STORE_BY_HBASE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;localhost&quot;" show="false"/>
@@ -1341,9 +1341,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Get_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="ACCESS_KEY" value="context.S3_Access_Key"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="8pW6Nmy2kudBziHdbteVLmsI2tBuxojG"/>
-    <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="context.S3_Access_Key" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="8pW6Nmy2kudBziHdbteVLmsI2tBuxojG" show="false"/>
+    <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="true"/>
     <elementParameter field="CHECK" name="ASSUME_ROLE" value="false"/>
     <elementParameter field="TEXT" name="ARN" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="ROLE_SESSION_NAME" value="&quot;&quot;" show="false"/>
