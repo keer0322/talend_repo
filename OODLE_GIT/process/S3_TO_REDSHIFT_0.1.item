@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="Redshift_Host" prompt="Redshift_Host?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="52.37.207.67"/>
-    <contextParameter comment="" name="Redshift_Database" prompt="Redshift_Database?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="oodledb"/>
-    <contextParameter comment="" name="Redshift_Username" prompt="Redshift_Username?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="root"/>
-    <contextParameter comment="" name="Redshift_Password" prompt="Redshift_Password?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_Password" value="fnLV2RvhzQN+rJnXfQllOA=="/>
+    <contextParameter comment="" name="RedshiftHost" prompt="RedshiftHost?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="52.37.207.67"/>
+    <contextParameter comment="" name="RedshiftDbName" prompt="RedshiftDbName?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="oodledb"/>
+    <contextParameter comment="" name="RedshiftUsername" prompt="RedshiftUsername?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="root"/>
+    <contextParameter comment="" name="RedshiftPassword" prompt="RedshiftPassword?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_Password" value="fnLV2RvhzQN+rJnXfQllOA=="/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
