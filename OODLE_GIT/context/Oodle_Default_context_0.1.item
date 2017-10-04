@@ -7,4 +7,5 @@
   <contextParameter xmi:id="_fkvc1aMzEeet6YH06skt2A" comment="" name="ConfigParamFileName" prompt="ConfigParamFileName?" promptNeeded="false" type="id_String" value="/home/ec2-user/oodle_config.txt"/>
   <contextParameter xmi:id="_fkvc1qMzEeet6YH06skt2A" comment="" name="JsonSerDeJarPath" prompt="JsonSerDeJarPath?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_CtrP0KiiEeeSJaJrKwwV2A" comment="" name="HDFS_tmp_OutputDailyFeedDir" prompt="HDFS_tmp_OutputDailyFeedDir?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_uk5DAKipEeeSJaJrKwwV2A" comment="" name="Hadoop_homedir" prompt="Hadoop_homedir?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
