@@ -106,8 +106,6 @@
       <relatedItems xmi:id="_x6sv8Z7fEeeE5por0IoA7Q" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_x6sv8p7fEeeE5por0IoA7Q" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_x6sv857fEeeE5por0IoA7Q" id="Importtweets_deployTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_hG-EkKMzEeet6YH06skt2A" id="_e-XsQKMmEeeJLJILu0UrZw - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_PrklMKbXEeeJ16lF_uXFWA" id="_FdXr0KbXEeeJ16lF_uXFWA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_oXNd4KIIEeewh9d2QGnGHQ">
       <baseItem xmi:id="_oXNd4aIIEeewh9d2QGnGHQ" id="_oWUtEKIIEeewh9d2QGnGHQ" version="0.1" type="job"/>
