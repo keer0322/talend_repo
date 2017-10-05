@@ -162,6 +162,7 @@
   </parameters>
   <node componentName="tRedshiftBulkExec" componentVersion="0.102" offsetLabelX="3" offsetLabelY="0" posX="640" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftBulkExec_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.RedshiftHost"/>
@@ -227,7 +228,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;create table IF NOT EXISTS Fitbit_daily_tgt_tbl &#xD;&#xA;(   &#xD;&#xA;Customer_id  int ,&#xD;&#xA;Physician_id  int ,&#xD;&#xA;Provider_id  int ,&#xD;&#xA;Event_date  varchar(30) ,&#xD;&#xA;Customer_firstnm  varchar(30) ,&#xD;&#xA;Customer_lastnm  varchar(30) ,&#xD;&#xA;Customer_age  int ,&#xD;&#xA;Customer_gender  varchar(30) ,&#xD;&#xA;Customer_city  varchar(30) ,&#xD;&#xA;Customer_state  varchar(30) ,&#xD;&#xA;Customer_country  varchar(30) ,&#xD;&#xA;Physician_name  varchar(30) ,&#xD;&#xA;Physician_city  varchar(30) ,&#xD;&#xA;Physician_state  varchar(30) ,&#xD;&#xA;Physician_country  varchar(30) ,&#xD;&#xA;Provider_name  varchar(30) ,&#xD;&#xA;Provider_city  varchar(30) ,&#xD;&#xA;Provider_state  varchar(30) ,&#xD;&#xA;Provider_country  varchar(30) ,&#xD;&#xA;Customer_heart_rate  varchar(30) ,&#xD;&#xA;Customer_calories  varchar(30) ,&#xD;&#xA;Customer_steps  int ,&#xD;&#xA;Customer_weight  varchar(30) ,&#xD;&#xA;Customer_BMR  varchar(30) ,&#xD;&#xA;Customer_sleep_starttime  varchar(30) ,&#xD;&#xA;Customer_sleep_endtime  varchar(30) ,&#xD;&#xA;Customer_goal  int ,&#xD;&#xA;Customer_goal_status  varchar(30) &#xD;&#xA;)&quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -546,8 +547,8 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; copy catdemo from 's3://awssampledbuswest2/tickit/category_pipe.txt' iam_role 'arn:aws:iam::&lt;aws-account-id>:role/&lt;role-name>' region 'us-west-2' &quot;"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; copy catdemo from 's3://awssampledbuswest2/tickit/category_pipe.txt'  region 'us-east-1' &quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -562,11 +563,12 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftRow_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_1" target="tRedshiftBulkExec_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftRow_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_1" target="tRedshiftRow_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftRow_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_1" target="tRedshiftBulkExec_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tContextLoad_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
