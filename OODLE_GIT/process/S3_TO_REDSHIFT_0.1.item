@@ -160,7 +160,7 @@
     <routinesParameter id="_ItRs4OMEEeahOPUz6AxSLw" name="Importtweets_deployTstandardizerow_1"/>
     <routinesParameter id="_TVdvcGcqEeOjappPcW-THA" name="Tweets_Generator"/>
   </parameters>
-  <node componentName="tRedshiftBulkExec" componentVersion="0.102" offsetLabelX="4" offsetLabelY="37" posX="640" posY="256">
+  <node componentName="tRedshiftBulkExec" componentVersion="0.102" offsetLabelX="3" offsetLabelY="0" posX="640" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftBulkExec_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -210,7 +210,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRedshiftBulkExec_1"/>
   </node>
-  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="50" offsetLabelY="37" posX="352" posY="256">
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="1" offsetLabelY="-2" posX="352" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
