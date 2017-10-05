@@ -48,7 +48,6 @@
     <contextParameter comment="" name="RedshiftDbName" prompt="RedshiftDbName?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="oodledb"/>
     <contextParameter comment="" name="RedshiftUsername" prompt="RedshiftUsername?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value="root"/>
     <contextParameter comment="" name="RedshiftPort" prompt="RedshiftPort?" promptNeeded="false" repositoryContextId="_WFTYIKksEeeYnLONC-b33A" type="id_String" value=""/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" type="id_String" value="US"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
@@ -173,7 +172,7 @@
     <elementParameter field="TEXT" name="ARN" value="&quot;arn:aws:iam::140089806333:role/EC2S3access&quot;" show="false"/>
     <elementParameter field="TEXT" name="ROLE_SESSION_NAME" value="&quot;EC2S3access&quot;" show="false"/>
     <elementParameter field="TEXT" name="SESSION_DURATION" value="15" show="false"/>
-    <elementParameter field="OPENED_LIST" name="REGION" value="context.region"/>
+    <elementParameter field="OPENED_LIST" name="REGION" value="DEFAULT"/>
     <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="KEY_TYPE" value="KMS_CMK" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ALGORITHM_SYMMETRIC_MASTER_KEY" value="AES" show="false"/>
